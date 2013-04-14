@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<objects xmlns="http://www.springframework.net">
-  <object id="AccountController" type="Buscador.Web.Controllers.AccountController, Buscador.Web" singleton="false">
-    <!--<property name="TestProperty" value="This has been injected via Spring.Net"/>-->
-  </object>
-  <object id="HomeController" type="Buscador.Web.Controllers.HomeController, Buscador.Web" singleton="false">
-    <!--<property name="TestProperty" value="This has been injected via Spring.Net"/>-->
-  </object>
-</objects>

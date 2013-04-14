@@ -1,2 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="searchService" Factory="Buscador.WCFServerWeb.ServiceHostFactory, Buscador.WCFServerWeb" %>
-

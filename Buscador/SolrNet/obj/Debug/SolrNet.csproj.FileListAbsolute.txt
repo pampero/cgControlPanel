@@ -1,8 +1,0 @@
-C:\deautos\Buscador\SolrNet\bin\Debug\SolrNet.XML
-C:\deautos\Buscador\SolrNet\bin\Debug\SolrNet.dll
-C:\deautos\Buscador\SolrNet\bin\Debug\SolrNet.pdb
-C:\deautos\Buscador\SolrNet\bin\Debug\HttpWebAdapters.dll
-C:\deautos\Buscador\SolrNet\bin\Debug\Microsoft.Practices.ServiceLocation.dll
-C:\deautos\Buscador\SolrNet\obj\Debug\ResolveAssemblyReference.cache
-C:\deautos\Buscador\SolrNet\obj\Debug\SolrNet.dll
-C:\deautos\Buscador\SolrNet\obj\Debug\SolrNet.pdb

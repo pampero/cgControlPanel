@@ -1,0 +1,2 @@
+. Arreglar notifications con servicio corriendo afuera, no funciona.
+. Implementar generador de agendamientos automáticos y servicios.

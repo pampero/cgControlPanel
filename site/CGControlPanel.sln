@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGControlPanel", "CGControlPanel\CGControlPanel.csproj", "{15530BD2-E009-4B9C-84EE-3625D9FEB48D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{94BF214C-20DD-4D23-B5BB-6AE4E8A32CD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{1F2D76D7-80DB-45CB-98F1-546801CC98B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{41E05FC6-DF3D-47F4-9A7B-78D4CD007CD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Processes", "Processes\Processes.csproj", "{438A3FD1-20A4-47CE-93E2-5DD2D886181B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quartz.Server.2010", "server\Quartz.Server\Quartz.Server.2010.csproj", "{09082B9A-906C-4A17-A2E5-6C947DAC7C85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{462945A7-4B28-4976-89D8-B321B66922DD}"
+	ProjectSection(SolutionItems) = preProject
+		..\Leame.txt = ..\Leame.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15530BD2-E009-4B9C-84EE-3625D9FEB48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15530BD2-E009-4B9C-84EE-3625D9FEB48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15530BD2-E009-4B9C-84EE-3625D9FEB48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15530BD2-E009-4B9C-84EE-3625D9FEB48D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94BF214C-20DD-4D23-B5BB-6AE4E8A32CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94BF214C-20DD-4D23-B5BB-6AE4E8A32CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94BF214C-20DD-4D23-B5BB-6AE4E8A32CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94BF214C-20DD-4D23-B5BB-6AE4E8A32CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F2D76D7-80DB-45CB-98F1-546801CC98B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F2D76D7-80DB-45CB-98F1-546801CC98B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F2D76D7-80DB-45CB-98F1-546801CC98B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F2D76D7-80DB-45CB-98F1-546801CC98B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41E05FC6-DF3D-47F4-9A7B-78D4CD007CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E05FC6-DF3D-47F4-9A7B-78D4CD007CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E05FC6-DF3D-47F4-9A7B-78D4CD007CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E05FC6-DF3D-47F4-9A7B-78D4CD007CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{438A3FD1-20A4-47CE-93E2-5DD2D886181B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{438A3FD1-20A4-47CE-93E2-5DD2D886181B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{438A3FD1-20A4-47CE-93E2-5DD2D886181B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{438A3FD1-20A4-47CE-93E2-5DD2D886181B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09082B9A-906C-4A17-A2E5-6C947DAC7C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09082B9A-906C-4A17-A2E5-6C947DAC7C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09082B9A-906C-4A17-A2E5-6C947DAC7C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09082B9A-906C-4A17-A2E5-6C947DAC7C85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

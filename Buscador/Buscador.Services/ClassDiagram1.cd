@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Buscador.Services.com.clarin.ResultConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgABAAAAAAAAAIAAAAAAAAAAgAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>com\clarin\ResultConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Buscador.Services.com.clarin.services.builders.solr.SolrQueryBuilder">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAgAAAAACAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>com\clarin\services\builders\solr\SolrQueryBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Buscador.Services.com.clarin.services.Results&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAgAAAAAAAIAgAAIAAAAIAAMAAAAQA=</HashCode>
+      <FileName>com\clarin\services\IResults.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Buscador.Services.com.clarin.services.impl.IndexServicePublicationSolrImpl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAACAABAAAAAAEAACAAAAAAAwAAAEAAAAAAAA=</HashCode>
+      <FileName>com\clarin\services\impl\IndexServicePublicationSolrImpl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Buscador.Services.com.clarin.services.impl.SolrQueryExtensionMethods">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>com\clarin\services\impl\SolrQueryExtensionMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Buscador.Services.FacetResultConverterVisitor" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAQCAAAAAAAAQAAgAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>FacetResultConverterVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Buscador.Services.com.clarin.IResultConverter">
+    <Position X="3.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAIAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>com\clarin\ResultConverter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Buscador.Services.com.clarin.services.IIndexService&lt;T&gt;">
+    <Position X="5.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAgAAAEAAAAAAAA=</HashCode>
+      <FileName>com\clarin\services\IIndexService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Buscador.Services.com.clarin.services.IResults&lt;T&gt;">
+    <Position X="0.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAgAAAAAAAIAAAAIAAAAIAAEAAAAAA=</HashCode>
+      <FileName>com\clarin\services\IResults.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

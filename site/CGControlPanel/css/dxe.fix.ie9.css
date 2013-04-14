@@ -1,0 +1,3 @@
+﻿/* Calendar */
+.vernav2.iconmenu .dxeCalendar td.dxMonthGrid {padding-right: 20px;} /* fix para que entre en la columna de la izquierda*/
+.dxeCalendarFooter > table {margin-left:0px;} /* boton Hoy*/

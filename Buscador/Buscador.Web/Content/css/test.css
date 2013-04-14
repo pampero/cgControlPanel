@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url("navigation.css");
+@import url("content.css");
+/* CSS Document */
+*{ margin:0; padding:0;}
+a{ outline:none; text-decoration:none;}
+img{-ms-interpolation-mode: bicubic; }
+p{ margin:0; color:#6D6D6D;font-weight: bold;}
+
+p a{ color:#787878;}
+p a:hover{ color:#FF8600;}
+
+body{ background:#F5F6F8; font:.74em Arial, Helvetica, sans-serif; margin:0;}
+
+/*ESTRUCTURA
+----------------------------------------*/
+#wrap{ width:100%;}
+#wrap-conteiner{
+	width:1004px;
+	margin:0px auto 0;
+}
+#wrap-header{ position:relative; background: url(http://static.deautos.com/img/home/bgHeader.jpg) repeat-x; height:116px; width:100%;margin-top:15px;}
+#content{
+	/*background:#fff url(http://static.deautos.com/img/home/bgContent.gif) repeat-y;*/
+	background:#fff;
+	overflow: auto;
+	padding:26px 0 15px;
+	width:1004px;
+}
+#left-col{ width:304px; float:left; margin-right:2px;}
+#middle-col{
+	width:450px;
+	float:left;
+	margin-top:5px;
+}
+#right-col{
+	width:240px;
+	float:right;
+    margin-top:25px;
+}
+#wrap-footer{
+	background:#fff;
+	width:1004px;
+	margin:auto;
+}
+
+
+/*HEADER
+----------------------------------------*/
+.logo{ position:absolute; left:0; z-index:100; background:url(/img_home/logo.jpg) no-repeat; width:336px; height:127px;}
+.logo a{ display:block; width:336px; height:127px;}
+.right-corner{
+	position:absolute;
+	right:-1px;
+	width:11px;
+	height:116px;
+	background-image: url(http://static.deautos.com/img/home/rightCorner.jpg);
+	background-repeat: no-repeat;
+}
+
+.headerInfo{
+	position:absolute;
+	z-index:500;
+	right:10px;
+	top:21px;
+	width:564px;
+	/*overflow: hidden;*/
+}
+.headerInfo p{ color:#fff; font-weight:700; font-size:1.2em; float:left; margin-top:25px;}
+.headerInfo .flashBox{  float:right; width:236px; height:65px;}

@@ -1,0 +1,98 @@
+/***** 1. RESET STYLE *****/
+/**************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/***** 2. GENERAL STYLES *****/
+/*****************************/
+
+body { font-size: 12px; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; color: #666; line-height: 21px; }
+input, select, textarea, button { font-size: 12px; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; outline: none; margin: 0; }
+a { text-decoration: none; color: #666; outline: none; }
+button { outline: none; }
+a img { border: 0; }
+h1,h2,h3,h4,h5, span.h3 { font-family: 'RobotoBoldCondensed', Arial, Helvetica, sans-serif; font-weight: normal; }
+small { font-size: 11px; }
+h1 { font-size: 32px; }
+h2 { font-size: 28px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px; }
+
+span.h3 { font-size: 24px; display: block; }
+
+
+/***** 8. PAGE HEADER STYLES *****/
+/*********************************/
+
+
+.pageheader { padding-top: 15px; background: url(../images/default/noise.white.png); position: relative; }
+.pageheader .pagetitle { 
+	margin: 0 10px 5px 10px; color: #485b79; font-weight: normal; font-size: 28px; font-family: 'RobotoBoldCondensed', Arial, Helvetica, sans-serif; 
+}
+.pageheader .pagedesc { color: #666; margin: 0 10px; }
+.notab { border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+
+
+
+
+
+.stdform button.cancel { background: #eee; color: #666; border: 1px solid #ddd; }
+.stdform button.cancel:hover { background: #ddd; border: 1px solid #ccc; }
+.stdform button.cancel:active { 
+	-moz-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.7); -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.7); 
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.stdform small.desc { font-size: 11px; color: #999; font-style: italic; display: block; margin: 5px 0 0 220px; }
+.stdform .stdformbutton { margin-left: 220px; text-align:right; }
+
+/*** ANOTHER FORM STYLE ***/
+.stdform2 label { padding: 10px; text-align: left;  }
+.stdform2 span.field, .stdform2 div.field { margin-left: 220px; background: #fff; padding: 8px; border-left: 1px solid #ddd; }
+.stdform2 .stdformbutton { margin-left: 0;  padding: 10px; background: #fff; }
+
+
+/***** 30. BUTTONS & ICONS STYLES *****/
+/**************************************/
+
+
+.stdbtn { 
+	font-weight: bold; padding: 5px 10px; margin-left:3px; border: 1px solid #ccc; background: #eee url(../images/buttons.png) repeat-x top left; color: #333; 
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; cursor: pointer; opacity: 0.8;
+}
+.stdbtn:hover { text-decoration: none; opacity: 1; }
+
+.btn_blue { background-position: 0 -76px; border-color: #0282ce; color: #fff; }
+.btn_black { background-position: 0 -114px; border-color: #222; color: #fff; }
+
+.stdbtn:active { background: #eee; }
+.btn_blue:active { background: #0591e5; }
+.btn_black:active { background: #333333; }
+
+
+/***** CUSTOM COLOR *****/
+a.btn_blue { 
+	background-image: url(../images/icons/sprites.white.png); background-color: #0f91f5; color: #fff; 
+	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border-color: #0976c9; opacity: 0.9;
+}
+a.btn_blue span { background-color: #0f91f5; border-left: 0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+a.btn_blue:hover { opacity: 1; color: #fff; border-color: #0976c9; }
+
+
+
+
+}

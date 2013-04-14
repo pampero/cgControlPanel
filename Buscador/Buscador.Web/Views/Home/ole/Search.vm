@@ -1,0 +1,3 @@
+﻿#foreach( $publication in $publications )
+    <li>$publication.VehicleModel</li>
+#end

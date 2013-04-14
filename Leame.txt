@@ -1,0 +1,27 @@
+C:\Program Files (x86)\IIS Express>appcmd set app "cgcontrolpanel/" /applicationPool:"Clr4ClassicAppPool"
+APP object "CGControlPanel/" changed
+
+------------------------------------------------------------------------------------------------------------
+
+Cargar scripts de bases de datos
+
+aspnetdb (administra la seguridad, debe funcionar con seguridad integrada en el connectionstring)
+cgQuartz (mantiene el scheduling de jobs)
+
+--------------------------------------------------------------------------------------------------------------
+
+Base de Datos autogenerada al ejecutar por primera vez la aplicacion.
+
+cgControlPanel - Se autogenera con un par de Jobs de ejemplo.
+
+---------------------------------------------------------------------------------------------------------
+
+Configurar los connection strings ubicados en los archivos web.config y app.config.
+
+
+-------------------------------------------------------------------------------------------------------
+
+Para ingresar a la aplicación
+
+usuario: admin
+password: P2ssw0rd

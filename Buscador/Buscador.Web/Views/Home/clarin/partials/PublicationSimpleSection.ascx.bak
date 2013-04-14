@@ -1,0 +1,19 @@
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
+<%@ Import Namespace="Buscador.Domain.com.clarin.entities" %>
+
+<% var publication = (Publication) Model; %>
+
+<div class="avisosimple">
+    <div class="fotocar2">
+        <div class="picsimple"><img src="../../../Content/images/ico_foto.png" border="0"></div>
+    </div>
+
+    <div class="avisotabsimple">
+        <div class="tabs_txt1_simple"><%=publication.VehicleMakeText + " " + publication.VehicleModelText%></div>
+        <div class="tabs_txt"><%=publication.VehicleKm%></div>
+        <div class="tabs_txt"><%=publication.VehicleYear%></div>
+        <div class="tabs_txt"><%=publication.VehiclePrice%></div>
+        <div class="tabs_txt"><%=publication.VehicleFuelTypeText%></div>
+        <div class="ver2"><span class="txtcontad"><a href="#">Ver aviso</a></span></div>
+    </div>
+</div>

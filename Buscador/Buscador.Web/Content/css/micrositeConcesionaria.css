@@ -1,0 +1,89 @@
+/*MICROSITE CONCESIONARIA*/
+/*.layout{ background:#e9e9e2;}*/
+.Cont{ background:#ffffff;}
+.microConcesionaria .ContHead .path{ background:none;}
+.breadcrum{ padding-bottom:24px;}
+.cajaNegra .imgCont{ float:left; width:140px; padding:0px 0px 0px 0px; Min-height:119px; background:url(../../../Content/images/fd_microsite_concesionaria_degrade-negro.gif) right top repeat-y;}
+/*inside midle*/
+{ width:584px; float:left;}
+.insideMidleH{ float:left; width:584px; height:auto;}
+.microConcesionaria .colMargen .insideMidleH h2{color:#e0e0e0; padding:16px 0 18px 10px;font-size: 30px;font-weight: bold;line-height: 30px;}
+.insideMidleB{ width:574px; float:left;}
+.insideMidleB .links{ float:left;width:327px; padding:0 15px 8px 4px;}
+.links li{padding-bottom:6px; float:left;}
+.links label{ float:left; width:36px; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#e0e0e0; padding:0 5px 0 5px;}
+.links a{ float:left; width:280px;font-size: 14px;}
+.insideMidleB .botCont{ float:left; width:187px; padding-left:33px;}
+.botCont .btnNar{ padding-top:8px;}
+.chapaVentas {background-repeat: no-repeat; float: left; height: 104px; padding-top: 7px; width: 225px; background:url(../../../Content/images/fd_chapa_sombra.png) no-repeat left bottom;}
+.chapaVentas .ventasCont{ float:left; padding:15px 0 0 18px; height: 85px; overflow: hidden;}
+.chapaVentas .ventasCont span{ font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#e0e0e0; padding-bottom:5px; float:left;}
+.chapaVentas .ventasCont p{ font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#f48921; line-height:21px; float:left; width:100%;}
+/*caja negra*/
+.cajaNegra{ margin-bottom:19px;}
+/*caja blanca*/
+.slidesCont{ float:left; width:333px;padding-left:20px;}
+.slidesCont .imageCont{ float:left; position:relative;}
+.slidesCont .imgageCont .btnL .btnSlideL{float:left; background: url(../../../Content/images/fd_slides_chicos.png) left top no-repeat;  width:23px; height:44px; position:absolute; left:11px; top:250px;}
+
+.slidesCont .imgageCont .btnL .btnSlideL.active:hover{ background:url(../../../Content/images/fd_slide_actives.png) left top; width:31px; height:60px; top:241px; left:12px;}
+
+/*.slidesCont .imgageCont .btnR .btnSlideR.active:hover{ background:url(../../../Content/images/fd_slide_actives.png) 31px top; width:31px; height:60px; top:241px; left:338px;}*/
+
+.slidesCont .imgageCont .btnL .btnSlideL.active{background: url(../../../Content/images/fd_slides_chicos.png) -46px top no-repeat;}
+.slidesCont .imgageCont .btnR .btnSlideR{float:right; background: url(../../../Content/images/fd_slides_chicos.png) -23px top no-repeat;  width:23px; height:44px; position:absolute; left:347px; top:250px;}
+.slidesCont .imgageCont .btnR .btnSlideR.active{background: url(../../../Content/images/fd_slides_chicos.png) -69px top no-repeat;}
+.slidesCont .enumerar{ width:43px; height:19px; display:block; background:url(../../../Content/images/fd_solapa_enumerar.png) left top no-repeat; position:absolute; left:165px; top:375px; padding-top:3px; padding-left:8px;}
+.slidesCont .enumerar span{ float:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#f48824; padding-right:2px;}
+.slidesCont .enumerar p{ float:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333;}
+.imgageCont .slideImg{ float:left; width:352px; padding-top:10px;}
+.slideImg div{ float:left; width:76px; height:57px; margin-right:15px;}
+
+.slideImg div .borde{ display:none;float:left; border:2px solid #f48824;width:72px; height:53px; position:relative; top:-57px; left:0;}
+.slideImg div:hover .borde{ display:block;}
+.slideImg div.active:hover .borde{}
+.slideImg div.active .borde{ display:block;  border:4px solid #f48824;width:68px; height:49px;}
+
+.slideImg div.last{ margin:0;}
+/* mapa*/
+.mapCont{ float:left; width:572px; padding-left:11px;}
+.mapCont .map{ float:left; width:572px; height:217px;    margin-top:3px;}
+.mapCont .place{ float:left; width:100%; border-bottom:1px solid #e9e9e2; padding:22px 0 22px 0;  background:url(../../../Content/images/fd_hubicacion.gif) 1px center no-repeat;}
+.mapCont .place h5{ font-weight:normal; color:#666666;padding-left:24px;}
+.mapCont .verPublicaciones{ float:left; padding:13px 0 0 22px;}
+.mapCont .verPublicaciones a{ font-size:14px;}
+.mapCont .verPublicaciones span{}
+
+
+/* columna left*/
+.columnaLeft{ float:left; width:644px;}
+.columnaRight{ float:right; width:300px;}
+.cajaGris .main{ padding-left:12px;}
+.cajaGris .main ul{ padding-left:3px; float:left; padding-bottom:8px;}
+.cajaGris .main ul.first{ width:295px;}
+.cajaGris .main ul li{ font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666666; padding:6px 0 3px 20px; background:url(../../../Content/images/btl_flecha.png) left center no-repeat;   background-position: 2px 8px;}
+.cajaGris .main p.servicios{ font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000000; padding-top:20px; padding-bottom:10px;}
+/*cajita negra*/
+.cajaNegra.mod{ margin-bottom:13px; padding-bottom:2px;}
+.cajaNegra h4{ color:#ffffff; line-height:28px; padding:4px 0 0 12px; float:left;}
+.parrafoFirst, .parrafoLast{ width:616px; padding-bottom:22px; line-height:22px; padding-left:15px;}
+/*cajita gris chica*/
+.titular .verTodos{background: url("../../../Content/images/btl_flecha.png") no-repeat scroll 72px 14px transparent; display: inline-block; font-family: Arial,Helvetica,sans-serif;font-size: 12px;padding-left: 11px;padding-top: 13px;width: 73px;}
+.cajaGris h4.avisos{ width:195px; padding:0 0 0 11px; font-size:18px; line-height:25px;}
+.cajaGris .titular.gris{ background:#e9e9e2; padding-bottom:5px;}
+.main ul.destacados{ padding-left:0px;}
+.main ul.destacados li{ width:277px; padding:8px 0 8px 0; background: url(../../../Content/images/fd_border_dotted.gif) left bottom repeat-x;}
+.main ul.destacados li.last{ border:none;}
+.main ul.destacados .avisosImg{ width:96px; height:72px; float:left;}
+.main ul.destacados .avisosCont{ float:left; width:148px; padding-left:0px; margin-top:10px;}
+.main ul.destacados .avisosCont a{ font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+
+.main ul.destacados .avisosCont a h3{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#238CEE; font-weight:normal;line-height: 17px;}
+.main ul.destacados .avisosCont a h3:hover{text-decoration:underline;}
+
+.avisosCont .datos{ float:left; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#666666; padding-bottom:4px;width: 100%;}
+.avisosCont .precio{ float:left; color:#f48921;text-align: left;}
+.explo76 { *position:relative; *overflow:hidden;}
+#derecha {float:right; margin-right:5px;}
+
+.microConcesionaria .conteiner .path .breadcrum {padding-left: 20px;padding-bottom: 24px;}

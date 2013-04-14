@@ -1,0 +1,82 @@
+﻿/* FORM */
+div#basicform div.par div.field table { border:0; }
+div#basicform div.par div.field table td { border:0;}
+div#basicform div.par input, div#basicform div.par textarea { background:whitesmoke; }
+div#basicform div.par input:focus, div#basicform div.par textarea:focus { background:#FFF; }
+div#basicform div.par .combobox input { padding-right: 0px; padding-left: 2px; }
+div#basicform div.par .field.smallinput table { width: 50%; min-width:100px; }
+div#basicform div.par .field.mediuminput table { width: 70%; min-width:200px;}
+div#basicform div.par .field.longinput table { width: 100%; min-width:300px; }
+div#basicform div.par .rightbutton {float:right;margin:10px 5px;}
+div#basicform .dxeButtonEditButton { padding-bottom:4px;}
+div#basicform .label { display:inline-block; padding-top: 3px; padding-bottom: 5px; }
+div#basicform p span.field div.checker {padding: 5px 0px;}
+
+/* Grid  */
+div.dxg-grid-container table {border-color:#DDD;}
+div.dxg-grid-container table.dxgvTable {background-color: #FCFCFC;}
+div.dxg-grid-container table.dxgvTable td {font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;}
+div.dxg-grid-container table.dxgvTable .dxgvHeader {color: #333;background-color: #F7F7F7;border: 1px solid #DDD;line-height: 21px; vertical-align: middle;font-weight: bold; }
+div.dxg-grid-container table.dxgvTable .dxgvFilterRow {background-color: #F7F7F7;border: 1px solid #DDD;}
+div.dxg-grid-container table.dxgvTable .dxgvFilterRow .dxeTextBox {border: 1px solid #DDD;}
+div.dxg-grid-container table.dxgvTable .dxgvFilterRow input[type="text"] {border:0px;padding:0px;width:100%;}
+div.dxg-grid-container table.dxgvTable .dxgvDataRow {font-size: 12px;color: #666;}
+div.dxg-grid-container table.dxgvTable .dxgvFilterBar {background-color: #FCFCFC;}
+div.dxg-grid-container div.dxgvPagerBottomPanel {background-color: #FCFCFC;}
+div.dxg-grid-container table.dxgvFilterBar {background-color: #FCFCFC;}
+div.dxg-grid-container .stdbtn { 
+	font-weight: bold; padding: 5px 10px; margin-left:3px; border: 1px solid #ccc; background: #eee url(../images/buttons.png) repeat-x top left; color: #FFF; 
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; cursor: pointer; opacity: 0.8;
+	background-position: 0 -76px;
+}
+div#radiobutton-container {float:right;}
+div#radiobutton-container span.dxeBase {display:inline; line-height:0px;}
+div#radiobutton-container span.dxeBase label {width:auto;font-weight:normal;font-size:10px;float:none;}
+
+/* Loading */
+table.dxpcLoadingPanel {border:1px Solid #9F9F9F;}
+
+/* Calendar */
+.widgetcontent .dxeCalendar {border-left:0px; border-right:0px;width:100%;}
+.widgetcontent .dxeCalendar .dxeCalendarFooter {background-color: #F7F7F7;}
+.widgetcontent .dxeCalendar .dxeCalendarHeader {background-color: #F7F7F7;}
+.vernav2.iconmenu .dxeCalendar td.dxMonthGrid {padding: 18px;} /* fix para que entre en la columna de la izquierda*/
+.dxeCalendarFooter > table {margin-left:75px;} /* Boton Hoy */
+
+/* widget boxes*/
+#procesos { margin-bottom: 0px; }
+#procesos-relacionados .title { margin-top: 0px; }
+
+/* Popups */
+div.dxpcContentPaddings {padding:0px;}
+
+
+.localhref { text-decoration: underline;color: #2121A8;}
+
+/* FormatXml */
+.st 
+{
+    line-height:20px;    
+}
+.c  {cursor:hand}
+.b  {color:red; font-family:'Courier New'; font-weight:bold;
+     text-decoration:none}
+.e  {margin-left:1em; text-indent:-1em; margin-right:1em}
+.k  {margin-left:1em; text-indent:-1em; margin-right:1em}
+.t  {color:#990000}
+.xt {color:#990099}
+.ns {color:red}
+.dt {color:green}
+.m  {color:blue}
+.tx {font-weight:bold}
+.db {text-indent:0px; margin-left:1em; margin-top:0px;
+     margin-bottom:0px;padding-left:.3em;
+     border-left:1px solid #CCCCCC; font:small Courier}
+.di {font:small Courier}
+.d  {color:blue}
+.pi {color:blue}
+.cb {text-indent:0px; margin-left:1em; margin-top:0px;
+     margin-bottom:0px;padding-left:.3em; font:small Courier;
+     color:#888888}
+.ci {font:small Courier; color:#888888}
+PRE {margin:0px; display:inline}

@@ -1,0 +1,124 @@
+/*FICHA COMPARAR*/
+.ContHead .path{background:none;}
+.fichaComparar{background-color:#e9e9e2;}
+.Cont{background-color:#ffffff;}
+.colMargen .colLeft{position:relative;}
+.scroll{width:973px;bottom:auto;z-index:5;background-color:#FFFFFF;}
+.compararCont{float:left; width:100%;}
+.compararTitulo{float:left; width:100%;}
+.compararTitulo h1{line-height:30px;}
+/*comparar main*/
+.compararMain{float:left;width:320px;height:218px;}
+/*chapa*/
+.compararMain{ padding-top:23px;}
+.compararMain .chapaCont{ width:317px; float:left;}
+.compararMain .chapaCont .chapa{ width:317px; height:111px; background:url(../../../Content/images/fd_ficha-comparar_chapa.jpg) left top no-repeat; padding-left:15px; padding-top:12px; margin-left:-2px;}
+.compararMain .chapaCont .chapa h5{ line-height:19px; padding-bottom:6px;}
+.iconos{ float:left; width:100%; margin-left:-3px;}
+.compararMain .chapaCont .chapa p.par2{ padding-top:4px; padding-left:1px;}
+
+
+.iconos .iconosFacebook{ width:274px; height:34px; float:left; border-bottom:1px solid #e9e9e2;}
+.iconosBot .facebook .megusta{ width:73px; height:20px; background:url(../../../Content/images/fd_facebook_megusta.png) left top no-repeat; float:left;}
+/*comentario dinamico*/
+.numeros{ float:left; margin-left:3px; margin-top:4px;}
+.numeros .L{ width:5px; height:18px; background:url(../../../Content/images/fd_comantario-dinamico_L.gif) left top no-repeat; float:left;}
+.numeros .M{height:16px; background:url(../../../Content/images/fd_comantario-dinamico_M.gif) left top repeat-x; float:left; padding:2px 6px 0 6px;}
+.numeros .R{width:5px; height:18px; background:url(../../../Content/images/fd_comantario-dinamico_R.gif) left top no-repeat; float:left;}
+
+.autosComparacionCont{ float:left; width:645px; padding-top:34px; padding-left:8px;}
+.autosComparacionCont .auto1{ width:141px;margin:0 15px 0 5px; float:left;}
+.autosComparacionCont .auto2{width:141px;margin:0 10px 0 10px; float:left;}
+.autosComparacionCont .auto3{width:141px;margin:0 10px 0 10px;float:left;}
+.autosComparacionCont .auto4{width:141px; margin:0 10px 0 10px;float:left;}
+.autosComparacionCont h1{ color:#000000;}
+.autosComparacionCont select{ width:141px; border:1px solid #e7e7de;}
+/* estado activo*/
+.autosComparacionCont select {color:#000; background-color:#ffffff; padding:0px 0 0px 6px; margin-bottom:5px;}
+.autosComparacionCont h5{ padding-bottom:12px; padding-left:10px;}
+.autosComparacionCont .agregar{width:100%; float:left;}
+.autosComparacionCont .agregar a{float:left; display:block; background:url(../../../Content/images/btn_ficha_comparar_agregar.gif) left top no-repeat; padding:2px 15px 3px; margin:16px 0 0 34px; font-size:12px;}
+.autosComparacionCont .agregar a:hover{ background-position: bottom; text-decoration:none;}
+.autosComparacionCont .agregar span{float:left; display:none; background:url(../../../Content/images/btn_ficha_comparar_agregar_inactive.gif) left top no-repeat; padding:2px 16px 3px; color:#a5a59c; margin:16px 0 0 34px; font-family:Arial, Helvetica, sans-serif;}
+
+.auto1Cont{ float:left;}
+/*estado inactivo*/
+.autosComparacionCont .inactive .agregar a{ display:none;}
+.autosComparacionCont .inactive .agregar span{ display:block;}
+.autosComparacionCont .inactive select{ color:#a5a59c; background:#f5f5f2;}
+/* estado cerrado*/
+.autosComparacionCont .auto1Cont .auto1{ display:block;}
+.autosComparacionCont .auto1Cont .autoDesplegado{display:none; float:left;}
+/* estado desplegado*/
+.autosComparacionCont .auto1Cont.active .auto1{ display:none;}
+.autosComparacionCont .auto1Cont.active .autoDesplegado{ display:block;}
+/**/
+.autoDesplegado{}
+/*datos*/
+.autoDesplegado .columna{float:left; width:149px; border:1px solid #e5e5dd; margin-top:-11px; position:relative; padding-bottom:31px; margin-right:10px; border-bottom:none;}
+.autoDesplegado .columna h5{padding:12px 0 14px 0px;}
+.autoDesplegado .columna .datos{ width:131px; float:left; padding-left:14px;}
+.autoDesplegado .columna .datos .imgCont{ float:left; border:1px solid #c7c7bb; width:96px; height:72px;}
+.autoDesplegado .columna .datos a{ float:left; font-weight:bold; line-height:18px; font-size:12px; padding-top:12px;}
+.autoDesplegado .columna .datos p.precio{ float:left; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#f9891b; padding-top:8px;}
+.crux{ background:url(../../../Content/images/btn_crux_cerrar.png) right top no-repeat; position:absolute; right:-8px; top:-8px; width:20px; height:18px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#238cee; font-weight:bold; text-align:center; padding-top:1px; padding-left:3px;}
+.crux:hover{ background-position:right bottom;}
+/* Informacion conenedor*/
+.informacionCont{ float:left; width:964px; padding-bottom:42px; margin-top:250px;}
+.informacionCont .filasMater{ float:left; width:100%;}
+.filasMater h4{ font-weight:normal; float:left; padding:17px 0 13px 15px; width:90%; /*border-top:1px solid #e9e9e2;*/}
+.filaGris{ float:left; background-color:#f7f7f3; width:100%;}
+.filaGris ul{ float:left; width:90%;padding:11px 0 13px 15px;}
+.filaGris ul li{ float:left; background-color:#fdfdfd; border:1px solid #eeeee9; width:149px;}
+.filaGris ul li.titulGris{ float:left; width:315px; border-top:1px solid #eeeee9;}
+
+ul.titulo{ float:left; width:970px;}
+ul.titulo li{ border-left:1px solid #e5e5dd; border-right:1px solid #e5e5dd; float:left; width:149px; margin-right:10px; height:46px;}
+ul.titulo li.first{ float:left; width:318px; border:none;}
+ul.titulo li.auto1{ width:149px;}
+ul.titulo li.auto2{}
+ul.titulo li.auto3{ width:149px;}
+ul.titulo li.auto4{ margin:0;width:149px;}
+/*tabla*/
+table.filasCont{ float:left; background-color:#ffffff;}
+table.filasCont tr{ margin-top:-2px;}
+table.filasCont td{ border-top:1px solid #eeeee9;border:1px solid #eeeee9; padding:6px 0 8px 0; width:149px; background-color:#fdfdfd; vertical-align:top; display:table-cell;}
+table.filasCont td.titul{ width:311px; background-color:#f7f7f3; padding-left:14px; border-right:none;}
+table.filasCont td.titul span{ font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; width:260px; display:block; line-height:22px;}
+table.filasCont td .ticks{ float:left; margin-left:15px; margin-top:4px; /*width:100%!important;*/}
+table.filasCont td .numeros{float:left; margin-left:15px;}
+table.filasCont td .numeros span{ font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#444444; float:left}
+
+table.filasCont td.space1{width:2px; height:5px; border:0; background:#ffffff;}
+table.filasCont td.space2{width:10px; height:5px; border:0; background:#f7f7f3;}
+table.filasCont td.space3{width:10px; height:5px; border:0; background:#f7f7f3;}
+table.filasCont td.space4{width:10px; height:5px; border:0; background:#f7f7f3;}
+/*tilde cruz pipe*/
+.tilde{ float:left; width:14px; height:13px; background:url(../../../Content/images/img_tick&cruz.png) center 0px no-repeat;}
+.cruz{ float:left; width:14px; height:14px;background:url(../../../Content/images/img_tick&cruz.png) center -13px no-repeat;}
+.pipe{ float:left; width:14px; height:13px; background:url(../../../Content/images/fd_ficha_comparar_pipe.gif) center center no-repeat;}
+/*blocke seguridad*/
+.filasMater.mod ul.titulo li{ height:68px;}
+.filasMater.mod h4{ padding:41px 0 13px 15px;}
+/*ESTADOS DE LAS COLUMNAS*/
+.filasMater .auto1{}
+.filasMater .space1{}
+.filasMater .auto2{}
+.filasMater .space2{}
+.filasMater .auto3{ display:none;}
+.filasMater .space3{ display:none;}
+.filasMater .auto4{display:none;}
+.filasMater .space4{display:none;}
+/*banner*/
+.bn728x90{ float:left; margin-top:58px; margin-left:116px;}
+.bn728x90 p{ padding-top:29px;}
+/*boton share*/
+.share{ float:left; width:43px; height:20px; background:url(../../../Content/images/fd_share.gif) left bottom no-repeat;}
+.share:hover{ background-position: left top;}
+/*breadcrum*/
+.breadcrum{ padding-top:25px; padding-bottom:17px;}
+.pipe2{ float:left; color:#e7e7de; padding:1px 6px 0 6px; font-size:17px;}
+.columna .crux a{ font-size:12px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; padding-left:2px;}
+
+
+

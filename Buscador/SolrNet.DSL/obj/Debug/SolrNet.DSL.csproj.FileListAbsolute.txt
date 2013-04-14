@@ -1,0 +1,11 @@
+C:\deautos\Buscador\SolrNet.DSL\bin\Debug\SolrNet.DSL.XML
+C:\deautos\Buscador\SolrNet.DSL\bin\Debug\SolrNet.DSL.dll
+C:\deautos\Buscador\SolrNet.DSL\bin\Debug\SolrNet.DSL.pdb
+C:\deautos\Buscador\SolrNet.DSL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\deautos\Buscador\SolrNet.DSL\bin\Debug\SolrNet.dll
+C:\deautos\Buscador\SolrNet.DSL\bin\Debug\HttpWebAdapters.dll
+C:\deautos\Buscador\SolrNet.DSL\bin\Debug\SolrNet.pdb
+C:\deautos\Buscador\SolrNet.DSL\bin\Debug\SolrNet.xml
+C:\deautos\Buscador\SolrNet.DSL\obj\Debug\ResolveAssemblyReference.cache
+C:\deautos\Buscador\SolrNet.DSL\obj\Debug\SolrNet.DSL.dll
+C:\deautos\Buscador\SolrNet.DSL\obj\Debug\SolrNet.DSL.pdb

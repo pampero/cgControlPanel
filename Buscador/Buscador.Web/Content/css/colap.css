@@ -1,0 +1,70 @@
+﻿.twistyOpen, .twistyClosed {
+		border-left:0px solid white;
+		border-top:0px solid white;
+		border-right: 0px solid #d9d9cd;
+		border-bottom: 0px solid #d9d9cd;
+		cursor:pointer;cursor:hand;
+		color: #333;
+		font-size:13px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight:bold;
+		padding: 4px 4px 4px 20px;
+		margin-top:1px;
+		margin-bottom: 1px;		
+	}
+	.twistyOpen {
+		background:url(../../../Content/images/arrow_up.gif) no-repeat center left;
+		background-color: #fff;
+		margin-left:0px;
+		margin-top:8px;
+	}
+	.twistyClosed {
+		background:url(../../../Content/images/arrow_down.gif) no-repeat center left;
+		background-color: #fff;
+		margin-left:0px;		
+	}
+	.facetText
+	{
+	    color: #787878;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        text-decoration: none;
+	}
+	
+.option ul li form input {
+		border:solid 1px #CDCDCD;
+		width:100px;
+		height:22px;
+		margin-bottom:5px;
+}
+
+.option ul li form div input {
+		width:64px;
+		height:25px;
+		border:solid 0px #CDCDCD;
+		margin-top:2px;
+		background:url(../../../Content/images/btnform_aplicar.jpg);
+		margin-left:80px;
+}
+
+#txtHasta {margin-left:3px;}
+.option ul li form div input:hover { border:solid 0px #CDCDCD; width:64px;	height:25px; background:url(../../../Content/images/btnform_aplicar_hover.jpg);}
+
+.twistyClosed:hover { color:#F16822; }
+	
+#face{ margin-top:4px; float:right; margin-left:10px; margin-left:14px; margin-right:20px; }
+#face_nor{ margin-top:7px; float:right; margin-left:10px; margin-left:14px; margin-right:24px; position:relative;left:13px;font-family: Arial, Helvetica, sans-serif;font-size: 11px;}
+#face2 { margin-right:0px; opacity: 0.4;}
+#face2:hover { opacity: 1; }
+#twi { padding-right: 0px; opacity: 0.4;}
+#twi:hover { opacity: 1; }
+.bor{ margin:0px; background:#fff; border:solid 0px #EEEEEE; padding-right:0px; margin-top:0px;width:190px;margin-left:25px;}
+#email{	margin-right:10px; opacity: 0.4;}
+
+
+#vermas {padding-bottom:10px; text-align:left; font-family:Arial,Helvetica,sans-serif; color:#787878; font-size:13px;padding-left:0px;}
+
+#vermas a {text-decoration:none;}
+#vermas a:hover {text-decoration:none; }
+
+.at300bs:hover { opacity:1;}

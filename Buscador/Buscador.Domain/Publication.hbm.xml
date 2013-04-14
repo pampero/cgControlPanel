@@ -1,0 +1,107 @@
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-access="property" auto-import="true" default-cascade="none" default-lazy="true">
+  <class xmlns="urn:nhibernate-mapping-2.2" mutable="true" name="Buscador.Domain.com.clarin.entities.Publication, Buscador.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="INDEX_TABLE">
+    <id name="Id" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="INDEX_ID" />
+      <generator class="identity" />
+    </id>
+    <property name="IndexWeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="INDEX_WEIGHT" />
+    </property>
+    <property name="PublicationContactsQty" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="PUBLICATION_CONTACTS_QTY" />
+    </property>
+    <property name="PublicationDate" type="System.DateTime, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="PUBLICATION_DATE" />
+    </property>
+    <property name="PublicationDeleted" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="PUBLICATION_DELETED" />
+    </property>
+    <property name="PublicationHighLight" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="PUBLICATION_HIGHLIGHT" />
+    </property>
+    <property name="PublicationId" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="PUBLICATION_ID" />
+    </property>
+    <property name="PublicationSubtitle" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="PUBLICATION_SUBTITLE" />
+    </property>
+    <property name="PublicationType" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="PUBLICATION_TYPE" />
+    </property>
+    <property name="PublicationUrl" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="PUBLICATION_URL" />
+    </property>
+    <property name="PublicationVisitorsQty" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="PUBLICATION_VISITOR_QTY" />
+    </property>
+    <property name="VehicleLocPart" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_LOC_PART" />
+    </property>
+    <property name="VehicleLocProv" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_LOC_PROV" />
+    </property>
+    <property name="VehicleLocLoc" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_LOC_LOC" />
+    </property>
+    <property name="VehicleColor" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_COLOR" />
+    </property>
+    <property name="VehicleFirstOwner" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_FIRST_OWNER" />
+    </property>
+    <property name="VehicleFuelType" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_FUEL_TYPE" />
+    </property>
+    <property name="VehicleKm" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_KM" />
+    </property>
+    <property name="VehicleMake" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_MAKE" />
+    </property>
+    <property name="VehicleModel" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_MODEL" />
+    </property>
+    <property name="VehicleVersion" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_VERSION" />
+    </property>
+    <property name="VehiclePicQty" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_PIC_QTY" />
+    </property>
+    <property name="VehiclePrice" type="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_PRICE" />
+    </property>
+    <property name="VehiclePriceCurrency" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_PRICE_CURRENCY" />
+    </property>
+    <property name="VehicleSegment" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_SEGMENT" />
+    </property>
+    <property name="VehicleStatus" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_STATUS" />
+    </property>
+    <property name="VehicleType" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_TYPE" />
+    </property>
+    <property name="VehicleYear" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="VEHICLE_YEAR" />
+    </property>
+    <property name="UserUid" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="USER_UID" />
+    </property>
+    <property name="UserType" type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="USER_TYPE" />
+    </property>
+    <bag name="EquipmentAttributes" mutable="true">
+      <key>
+        <column name="INDEX_TABLE_ID" />
+      </key>
+      <one-to-many class="Buscador.Domain.com.clarin.entities.EquipmentAttr, Buscador.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    </bag>
+    <bag name="PublicationAttributes" mutable="true">
+      <key>
+        <column name="INDEX_TABLE_ID" />
+      </key>
+      <one-to-many class="Buscador.Domain.com.clarin.entities.PublicationAttr, Buscador.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    </bag>
+  </class>
+</hibernate-mapping>

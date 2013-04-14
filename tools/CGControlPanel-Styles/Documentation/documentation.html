@@ -1,0 +1,687 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documentation | Amanda Responsive Admin Template by ThemePixels</title>
+<style type="text/css">
+body { background: #333; font-size: 13px; font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+h1 { font-size: 22px; } h2 { font-size: 18px; border-bottom: 1px dashed #ccc; padding-bottom: 5px; } h3 { font-size: 16px; } h4 { font-size: 14px; }
+a,a:active { color: #069; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrapper { background: #fff; width: 980px; margin: 20px auto; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.wrapperinner { padding: 20px; line-height: 21px; }
+.tcmenu { padding: 0 20px; color: #999; }
+pre { border: 1px solid #ccc; padding: 10px; font-size: 12px; background: #eee; overflow: auto; }
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="wrapperinner">
+    	<p>"Amanda Responsive Admin Template" Documentation v1.0 </p>
+        <h1>Amanda Responsive Admin Template</h1> 
+		<p>Created: 07/17/2012 By: Mienard Lumaad (themepixels)</p> 
+
+<p>Thank you for downloading my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via our contact page. Thanks so much! </p>
+
+		<h2>Table of Contents</h2>
+        
+        <ol class="tcmenu">
+        	<li><a href="#htmlstructure">HTML Structure</a>
+            	<ul>
+                	<li><a href="#header">Header</a></li>
+                	<li><a href="#leftmenu1">Left Menu with 2 Different Styles</a></li>
+                    <li><a href="#withoutleftmenu">Without Left Menu</a></li>
+                    <li><a href="#maincontent">Main Content</a></li>
+                    <li><a href="#columns">Page Columns</a></li>
+                    <li><a href="#fixedright">With Fixed Width Right Column</a></li>
+                    <li><a href="#usingtab">Using Tab in a Page</a></li>
+                </ul>
+        </li>
+            <li><a href="#cssfiles">CSS Files &amp; Structure</a>
+            	<ul>
+                	<li><a href="#howstyleworks">How Theme Switching Style Works</a></li>
+                	<li><a href="#defaultstylechange">Changing the Default Style</a></li>
+                </ul>
+            </li>
+            <li><a href="#javascript">Javascript</a>
+            	<ul>
+                	<li><a href="#wysiwyg">WYSIWYG Editor</a></li>
+                    <li><a href="#charcount">Character count</a></li>
+                	<li><a href="#calendar">Calendar</a></li>
+                    <li><a href="#alerts">jQuery Alerts</a></li>
+                    <li><a href="#autogrow">Autogrow textarea</a></li>
+                    <li><a href="#slider">Content slider</a></li>
+                    <li><a href="#colorbox">Colorbox (lightbox)</a></li>
+                    <li><a href="#colorpicker">Colorpicker</a></li>
+					<li><a href="#datepicker">Date Picker</a></li>
+                    <li><a href="#growl">Growl Notification</a></li>
+                    <li><a href="#tabs">Tabs</a></li>
+                    <li><a href="#accordion">Accordion</a></li>
+                    <li><a href="#slider">Slider</a></li>
+                    <li><a href="#charts">Charts</a></li>
+                    <li><a href="#chat">Chat</a></li>
+                    <li><a href="#validation">Form Validation</a></li>
+                    <li><a href="#wizard">Wizard Form</a></li>
+            	</ul>
+    </li>
+            <li><a href="#credits">Sources &amp; Credits</a></li>
+        </ol>
+        
+<br />
+        
+        <h2 id="htmlstructure">1. HTML Structure</h2>
+        
+        <p>In this template, the &lt;body&gt; tag uses 4 class names for login page (<strong>class=&quot;loginpage&quot;</strong>), for pages with left menu (<strong>class=&quot;withvernav&quot;</strong>), for pages with left menu style 1 in collapsed mode (<strong>class=&quot;withmenucoll</strong>&quot;) and for pages with left menu style 2 in collapsed mode (<strong>class=&quot;withmenucoll2&quot;</strong>). These 4 class names will be used to determine which background style and position to use in the body element. For example, in the login page it use &lt;body class=&quot;loginpage&quot;&gt; and for other pages it use &lt;body class=&quot;withvernav&quot;&gt; or no class when you want to have a page without left menu</p>
+        <p>This theme is a flexible layout with up to 2 columns with multiple columns in the main panel. </p>
+        <p>All of the information within the page area is nested within a div with a class of <strong>"bodywrapper"</strong>.</p>
+        <pre>
+&lt;body&gt;
+   &lt;div class=&quot;<strong>bodywrapper</strong>&quot;&gt;
+      &lt;div class=&quot;topheader&quot;&gt; ... &lt;/div&gt;
+      &lt;div class=&quot;header&quot;&gt; ... &lt;/div&gt;
+      ...
+   &lt;/div&gt;&lt;!--bodywrapper--&gt;
+&lt;/body&gt;</pre>
+
+    <h3 id="header">1.1 Header</h3>
+
+	<p>All of the information within the header area of the page is wrapped with a class of "<strong>topheader</strong>" and "<strong>header</strong>".</p>
+	<p><img src="images/header.png" alt="" 	/></p>
+	<pre>&lt;div class=&quot;topheader&quot;&gt;
+   &lt;div class=&quot;left&quot;&gt;
+      &lt;!-- LOGO GOES HERE --&gt;
+      ...
+   &lt;/div&gt;
+   &lt;div class=&quot;right&quot;&gt; ... &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+	<p><img src="images/header2.png" alt="" /></p>
+    
+	<pre>&lt;div class=&quot;header&quot;&gt;
+   &lt;div class=&quot;headermenu&quot;&gt;
+      &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;icon icon-flatscreen&quot;&gt;&lt;/span&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+         ...
+   &lt;/div&gt;
+   &lt;div class=&quot;headerwidget&quot;&gt;
+      ...
+   &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+    <br />
+    
+    <h3 id="leftmenu1">1.2 Left Menu with 2 Different Styles</h3>
+<p>The structure for left menu are the following. If you want to use the default style for left menu just use the class <strong>vernav</strong>, otherwise <strong>vernav2</strong>. </p>
+<p>&nbsp; <img src="images/menu.png" alt="" /><img src="images/menu2.png" alt="" /></p>
+<pre>
+&lt;!-- NOTE: The &lt;body&gt; MUST have a class name of &quot;withvernav&quot; --&gt;
+&lt;div class=&quot;vernav iconmenu&quot;&gt;
+   &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#formsub&quot; class=&quot;editor&quot;&gt;Forms&lt;/a&gt; &lt;!-- with submenu --&gt;
+         &lt;span class=&quot;arrow&quot;&gt;&lt;/span&gt;
+            &lt;ul id=&quot;formsub&quot;&gt;
+               &lt;li&gt;&lt;a href=&quot;forms.html&quot;&gt;Basic Form&lt;/a&gt;&lt;/li&gt;
+               ...
+      &lt;li&gt;&lt;a href=&quot;filemanager.html&quot; class=&quot;gallery&quot;&gt;File Manager&lt;/a&gt;&lt;/li&gt;
+      ...
+&lt;/div&gt;&lt;!-- vernav--&gt;
+&lt;div class=&quot;centercontent&quot;&gt;
+   ...
+&lt;/div&gt;&lt;!--centercontent--&gt;</pre>
+<p>As you can see in the above code, there is another class name (<strong>iconmenu</strong>) next to vernav and that is if you want to have an icon in the menu. If you prefer not to have an icon just remove that class name.</p>
+<br />
+<h3 id="withoutleftmenu">1.3 Without Left Menu</h3>
+<br />
+<p>If you prefer to have your page not to have a left menu, then you should do the following:</p>
+<ol>
+	<li>Remove class name "<strong>withvernav</strong>&quot; in the &lt;body&gt; element. Refer to page <em>reports.html</em></li>
+	<li>Remove the element with a class name of &quot;<strong>centercontent</strong>&quot;. See the difference between <em>dashboard.html</em> and <em>reports.html</em></li>
+</ol>
+
+<br />
+
+<h3 id="maincontent">1.4 Main Content</h3>
+
+<p>The main content is where you can see the main content of the page that wraps inside the element with a class name of "<strong>contentwrapper</strong>" and with a page header right before to it.</p>
+
+<pre>&lt;div class=&quot;pageheader&quot;&gt;
+   &lt;h1 class=&quot;pagetitle&quot;&gt;Calendar&lt;/h1&gt;
+   &lt;span class=&quot;pagedesc&quot;&gt;This is a sample description of a page&lt;/span&gt;
+   &lt;ul class=&quot;hornav&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#updates&quot;&gt;Updates&lt;/a&gt;&lt;/li&gt;
+      ...
+   &lt;/ul&gt;<br />&lt;/div&gt;&lt;!--pageheader--&gt;<br />        <br />&lt;div id=&quot;contentwrapper&quot; class=&quot;contentwrapper&quot;&gt;
+ ...
+&lt;/div&gt;&lt;!--contentwrapper--&gt;<br /></pre>
+
+<p>All of the information found in the main content of the page should put inside the element with a class name of "<strong>contentwrapper</strong>". If you want this main content to have a right panel refer to section <a href="#fixedright">1.6 With Fixed Width Right Panel</a></p>
+
+<p>From the code above, the page have a page title that wraps in a div element &quot;<strong>pageheader</strong>&quot;. The page header also have a tab with a class name of &quot;<strong>hornav</strong>&quot;. You can remove the tab if you want to have a no tab in the page by removing the element &quot;<strong>hornav</strong>&quot; along with it's sub element. Upon removing the tab element you should also add a class name of &quot;<strong>notab</strong>&quot; in the element &quot;<strong>pageheader</strong>&quot;. Refer code below</p>
+<pre>&lt;div class=&quot;pageheader notab&quot;&gt;
+   &lt;h1 class=&quot;pagetitle&quot;&gt;Calendar&lt;/h1&gt;
+   &lt;span class=&quot;pagedesc&quot;&gt;This is a sample description of a page&lt;/span&gt;<br />&lt;/div&gt;&lt;!--pageheader--&gt;</pre>
+   
+<p>&nbsp;</p>   
+
+<br />
+
+<h3 id="columns">1.5 Page Columns</h3>
+    
+    <h4><em>Two Columns</em></h4>
+    <pre>&lt;div class=&quot;one_half&quot;&gt; content here... &lt;/div&gt;
+&lt;div class=&quot;one_half last&gt; content here ... &lt;/div&gt;</pre>
+	
+    <h4><em>Three Columns</em></h4>
+    <pre>&lt;div class=&quot;one_third&quot;&gt; content here ... &lt;/div&gt;
+&lt;div class=&quot;one_third&quot;&gt; content here ... &lt;/div&gt;
+&lt;div class=&quot;one_third last&quot;&gt; content here ... &lt;/div&gt;</pre>
+
+	<p>This theme also allows up to 6 columns by using a class of <strong>two_third, one_fourth, three_fourth, one_fifth, four_fifth, one_sixth and five_sixth</strong>. You can also create 2 columns using a combination of <strong>two_third</strong> and <strong>one_third</strong>. Make sure to add a class name of <strong>"last"</strong> to prevent your page messed up</p>
+    
+    <br />
+    <h3 id="fixedright">1.6 With Fixed Width Right Column</h3>
+    <p>This theme also have a fixed width right column instead of using the columns (one_half, one_third, etc.). See page <em>calendar.html</em></p>
+    
+    <pre>&lt;div id=&quot;contentwrapper&quot; class=&quot;contentwrapper withrightpanel&quot;&gt;
+   ...
+&lt;/div&gt;&lt;!--contentwrapper--&gt;<br />&lt;div class=&quot;rightpanel&quot;&gt;
+   &lt;div class=&quot;rightpanelinner&quot;&gt;
+      ...
+   &lt;/div&gt;
+&lt;/div&gt;&lt;!--rightpanel--&gt;</pre>
+
+	<p>To create a page with right panel, add a div element with a class name of <strong>rightpanel</strong> (refer code above) right next to div element <strong>contentwrapper. </strong>As you can see in the contentwrapper element it also has a class name of &quot;<strong>withrightpanel</strong>&quot; so when adding a right panel to a page, you should also add &quot;<strong>withrightpanel</strong>&quot; class to element <strong>contentwrapper</strong>. The purpose of this class is to adjust the right margin of the element contentwrapper to give space for the right panel.</p>
+	<br />
+    
+    <h3 id="usingtab">1.7 Using Tab in a Page</h3>
+    
+    <p>You can use a tab and update the content of the page by using ajax or inline, simply by following the format below.</p>
+    
+    <pre>
+&lt;ul class=&quot;hornav&quot;&gt;
+   &lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;update.html&quot;&gt;Updates&lt;/a&gt;&lt;/li&gt; &lt;!-- update content from url --&gt;
+   &lt;li&gt;&lt;a href=&quot;#activities&quot;&gt;Activities&lt;/a&gt;&lt;/li&gt; &lt;!-- update content from inline element --&gt;<br />&lt;/ul&gt;</pre>
+    
+   <p>By clicking the tab, the content will update depends on the attribute of href. If the <em>href</em> value is a url(i.e update.html) , the content should update from the url and if the <em>href</em> value is a text that start with #, it will look for hidden element with an id based on the href value. <strong>Note</strong>: You cannot join the tab with an href value of url and href value of id. If you want to update the content from url, then all of the tab href value should also be a url and if one have a href value of id, the rest should also have a href value of id. Refer to code below</p> 
+   
+   <pre>&lt;div id=&quot;contentwrapper&quot; class=&quot;contentwrapper&quot;&gt;
+   &lt;div id=&quot;content1&quot; class=&quot;subcontent&quot;&gt; ... &lt;/div&gt;
+   &lt;div id=&quot;content2&quot; class=&quot;subcontent&quot; style=&quot;display:none&quot;&gt; ... &lt;/div&gt;
+&lt;/div&gt;&lt;!--contentwrapper--&gt;</pre>
+
+	<p>The code above should be in that format if the tabs href value is an id (<strong>href="#update"</strong>). The href value must exist in order to work. For example, the href value is #update. The element with an id of update should exist (<strong>&lt;div id=&quot;update&quot; class=&quot;subcontent&quot;&gt;</strong>) and must have a class name of <strong>subcontent</strong>. Take note that subcontent is shown by default, so if you have multiple tabs, the rest of the element should add an attribute of <strong>style=&quot;display: none</strong>&quot;. Refer to code above.</p>
+
+	<br /><br />
+    
+	<h2 id="cssfiles">2. CSS Files &amp; Structure</h2>
+    
+    <p>This template contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file. Below is what css styles are arranged in <strong><em>style.default.css</em></strong>. CSS files are located in folder <em><strong>/css</strong></em>. Third partyl css styles can be found in <strong>css/plugins/ </strong>like the styles for jquery ui and fullcalendar. </p>
+    
+<pre>1. Reset Style
+2. General Styles
+3. Column Styles
+4. Login Page Styles
+5. Notification Styles
+6. User Information Drop Styles
+7. Header Styles
+8. Page Header Styles
+9. Horizontal Navigation Styles
+10. Vertical Navigation Styles
+11. Center Content Styles
+12. Main Content Styles
+13. Dashboard Styles
+14. File Manager Styles
+15. Right Panel Styles
+16. Widget Box Styles
+17. Content Slider Styles
+18. Calendar Styles
+19. Standard Tables Styles
+20. Standard Form Styles
+21. Wizard Styles
+22. Blog Styles
+23. Progress Bar Styles 
+24. Pagination Styles
+25. Slim Scrollbar Styles
+26. Breadcrumbs Styles
+27. Color Picker Styles
+28. Notification Messages
+29. Customer Support Styles
+30. Buttons &amp; Icons Styles
+31. Typography Styles
+32. News Feed Styles
+33. Profile Page Styles
+34. Photo Sharing Styles
+35. Product List Styles
+36. Messages Styles
+37. Error Pages Styles
+38. Custom Styles
+39. Media Queries</pre>
+
+<p>The theme imports 3rd party css styles by the following:</p>
+<pre>@import url('../fonts/roboto.css');
+@import url('plugins/jquery.alerts.css');
+@import url('plugins/uniform.tp.css');
+@import url('plugins/jquery.ui.css');
+@import url('plugins/jquery.ui.autocomplete.css');
+@import url('plugins/fullcalendar.css');
+@import url('plugins/colorbox.css');
+@import url('plugins/colorpicker.css');
+@import url('plugins/jquery.jgrowl.css');
+@import url('plugins/jquery.tagsinput.css');
+@import url('plugins/ui.spinner.css');</pre>
+
+<h3 id="howstyleworks">2.1 How Theme Switching Style Works</h3>
+
+<p>Style switching works by adding additional line of codes right next to the main stylesheet.</p>
+
+<pre>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.default.css&quot; type=&quot;text/css&quot; /&gt;<br />&lt;link id=&quot;addonstyle&quot; rel=&quot;stylesheet&quot; href=&quot;css/style.blueline.css&quot; type=&quot;text/css&quot; /&gt;</pre>
+
+<p>The second stylesheet in line 2 of the code above should always have an id of "addonstyle" to make theme switching works. The second stylesheet will automatically add using javascript when user click on the style switcher. You can also add manually by reading the topic next to this.</p>
+<p>This template is using cookie to preserve the style that is already set by user to load the that style to other pages of this template. See code below.</p>
+
+<pre>///// CHANGE THEME /////<br />jQuery('.changetheme a').click(function(){<br />   var c = jQuery(this).attr('class');<br />   if(jQuery('#addonstyle').length == 0) {
+      if(c != 'default') {
+         jQuery('head').append('&lt;link id=&quot;addonstyle&quot; rel=&quot;stylesheet&quot; href=&quot;css/style.'+c+'.css&quot; type=&quot;text/css&quot; /&gt;');
+         jQuery.cookie(&quot;addonstyle&quot;, c, { path: '/' });
+      }
+   } else {
+     if(c != 'default') {
+        jQuery('#addonstyle').attr('href','css/style.'+c+'.css');
+        jQuery.cookie(&quot;addonstyle&quot;, c, { path: '/' });
+     } else {
+        jQuery('#addonstyle').remove();	
+        jQuery.cookie(&quot;addonstyle&quot;, null);<br />     }<br />   }<br />});<br />	<br />///// LOAD ADDON STYLE WHEN IT'S ALREADY SET /////<br />if(jQuery.cookie('addonstyle')) {<br />   var c = jQuery.cookie('addonstyle');<br />   if(c != '') {<br />      jQuery('head').append('&lt;link id=&quot;addonstyle&quot; rel=&quot;stylesheet&quot; href=&quot;css/style.'+c+'.css&quot; type=&quot;text/css&quot; /&gt;');<br />      jQuery.cookie(&quot;addonstyle&quot;, c, { path: '/' });<br />   }<br />}
+</pre>
+
+<h3 id="defaultstylechange">2.2 Changing the Default Style</h3>
+<p>Changing the default style of this template is simple. You can manually add the line below inside of your &lt;head&gt; element.</p>
+<pre>
+&lt;head&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.default.css&quot; type=&quot;text/css&quot; /&gt;<br />   &lt;link id=&quot;addonstyle&quot; rel=&quot;stylesheet&quot; href=&quot;css/style.blueline.css&quot; type=&quot;text/css&quot; /&gt;
+&lt;/head&gt;</pre>
+
+<br />
+
+	<h2 id="javascript">3. Javascript</h2>
+    
+    <p>This theme imports a total of 26 3rd party javascript files and 17 custom javascript files for some the pages in this template. </p>
+    
+    <h4>Custom</h4>
+    <p><strong>Folder:</strong> <em>js/custom/</em> - 17 scripts for doing the animation, effects, functionality, etc.</p>
+	<ul class="list">
+    	<li><strong>blog.js</strong> - a required script used for blog.html and blogview.html page</li>
+    <li><strong>calendar.js</strong> - a required script used for calendar.html page</li>
+    	<li><strong>charts.js</strong> - used for charts.js</li>
+    	<li><strong>dashboard.js</strong> - used for dashboard.html</li>
+        <li><strong>editor.js</strong> - a required script used for editor.html page (WYSIWYG)</li>
+        <li><strong>elements.js</strong> - a custom script used for elements.html page</li>
+        <li><strong>filemanager.js</strong> - a required script used for filemanager.html page</li>
+        <li><strong>form.js</strong> - a custom sript used for form.js</li>
+        <li><strong>general.js</strong> - a custom script required in all pages for the header, sidebar menu, etc.</li>
+        <li><strong>index.js</strong> - a required script used for index.html page (Login Page)</li>
+        <li><strong>messages.js</strong> - a required script used for messages.html page</li>
+        <li><strong>newsfeed.js</strong> - a required script used for newsfeed.html page</li>
+        <li><strong>productlist.js</strong> - a required script used for productlist.html page</li>
+        <li><strong>profile.js</strong> - a required script used for profile.html page</li>
+        <li><strong>support.js</strong> - a required script used for support.html page (Chat)</li>
+        <li><strong>tables.js</strong> - a custom script required for tables.html</li>
+        <li><strong>widgets.js</strong> - a custom script required for widgets.htmll</li>
+    </ul>
+    
+    <h4>Plugins</h4>
+	<p><strong>Folder:</strong> <em>js/plugins/</em> - 26 scripts used for the plugins</p>
+    <ul>
+   	  <li><strong>tinymce/ </strong>- a WYSIWYG TinyMCE editor </li>
+   	  <li><strong>charCount.js</strong> - use for forms.html to count number of character in textarea</li>
+        <li><strong>colorpicker.js</strong> - a script for colorpicker used in elements.html</li>
+        <li><strong>excanvas.min.js</strong> - a script used for charts intended for IE used in reports.html</li>
+        <li><strong>fullcalendar.min.js</strong> - a script used for calendar in calendar.html</li>
+        <li><strong>jquery.alerts.js</strong> - for custom alert boxes used in elements.html</li>
+        <li><strong>jquery.autogrow-textarea.js</strong> - for autogrowing textarea used in newsfeed.html</li>
+        <li><strong>jquery.bxSlider.min.js</strong> - to create a slider content used in widgets.html</li>
+        <li><strong>jquery.colorbox-min.js</strong> - for lightbox type used in viewing images</li>
+        <li><strong>jquery.cookie.js</strong> - used in all pages, to store the current selected theme styles</li>
+        <li><strong>jquery.dataTables.min.js</strong> - to create dynamic table used in tables.html</li>
+        <li><strong>jquery.flot.min.js, jquery.flot.pie.min.js, etc.</strong> - a script for charts used in reports</li>
+        <li><strong>jquery.jgrowl.js</strong> - a script for notification messages</li>
+        <li><strong>jquery.slimscroll.js</strong> - to create a slim scroll like in facebook online users. Used in widgets.html</li>
+        <li><strong>jquery.smartWizard-2.0.min.js</strong> - used for wizard form</li>
+        <li><strong>jquery.tagsinput.min.js</strong> - to add a tag input used in forms.html</li>
+        <li><strong>jquery.uniform.min.js</strong> - to transform form element into fancy form ui used in forms.html and some other pages</li>
+        <li><strong>jquery.validate.min.js</strong> - a required script for validating a form</li>
+        <li><strong>jquery-1.5.2.min.js</strong> - a js framework required in calendar.html</li>
+        <li><strong>jquery-1.7.min.js</strong> - a js framework required in all of the plugins and custom js</li>
+        <li><strong>jquery-ui-1.8.16.custom.min.js</strong> - a script for ui effects, animation, datepicker, etc.</li>
+        <li><strong>ui.spinner.min.js</strong> - to create a spinner form input used in forms.html</li>
+    </ul>
+    
+    <p>Before using any of the plugins above in your page, make sure to add the jQuery in your head before adding any jQuery plugins.</p>
+    
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery-1.7.min.js&quot;&gt;&lt;/script&gt;</pre>
+    <br />
+    
+    <h3 id="wysiwyg">3.1 WYSIWYG Editor</h3>
+    
+    <p>This template is using TinmyMCE as wysiwyg editor. To learn more about using TinyMCE, just go to their website <a href="http://www.tinymce.com/" target="_blank">http://www.tinymce.com/</a></p>
+    
+    <p>For this editor to work, the code below should be present in your &lt;head&gt; tag element</p>
+    <pre>
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery-1.7.min.js&quot;&gt;&lt;/script&gt;<br />&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/tinymce/jquery.tinymce.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/custom/editor.js&quot;&gt;&lt;/script&gt;     </pre>
+
+<p>In your page, the code below should be present</p>
+<pre>&lt;textarea class=&quot;tinymce&quot;&gt;&lt;/textarea&gt;</pre> 
+
+<br />
+
+<h3 id="charcount">3.2 Character Count</h3>
+
+<p>This template uses jQuery Character Count to count the number of character inside a textarea. This plugin is executed in <em>forms.html</em>. By using the plugin, the code below must be present in your page.</p>
+
+<pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/charCount.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function(){
+   jQuery(&quot;#textarea&quot;).charCount({<br />		allowed: 120,		<br />		warning: 20,<br />		counterText: 'Characters left: '	<br />	});
+});
+&lt;/script&gt;
+
+// ADD THE CODE BELOW ANYWHERE INSIDE &lt;BODY&gt; ELEMENT
+&lt;textarea cols=&quot;80&quot; rows=&quot;5&quot; id=&quot;textarea&quot;&gt;&lt;/textarea&gt;</pre>
+
+<p>To learn more about this plugin, go to <a target="_blank" href="http://cssglobe.com/post/7161/jquery-plugin-simplest-twitterlike-dynamic-character-count-for-textareas">Character Count</a></p>
+
+<br />
+   
+    <h3 id="calendar">3.3 Calendar</h3>
+    
+    <p>This template uses <a href="http://arshaw.com/fullcalendar/"><strong>FullCalendar v1.5.2</strong></a> by Adam Shaw. You can read the full documentation for this calendar to <a href="http://arshaw.com/fullcalendar/docs/">http://arshaw.com/fullcalendar/docs/</a></p>
+    <p>For calendar to work  in your page, simply add the following code below into your &lt;head&gt; tag. Note: The template is using the jQuery version 1.7 but the calendar doesnt work in this version so in your calendar.html you should use the older jQuery with version 1.5.2. The rest of the pages of this template just use 1.7</p>
+<pre>
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery-1.5.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/fullcalendar.min.js&quot;&gt;&lt;/script&gt;<br />&lt;script type=&quot;text/javascript&quot; src=&quot;js/custom/calendar.js&quot;&gt;&lt;/script&gt;
+</pre>
+<p>Upon page load, the fullcalendar will look for an element with an id #calendar to append the calendar. To change the id name, just refer to js/custom/calendar.js to change the id</p>
+<pre>&lt;div id=&quot;calendar&quot;&gt;&lt;/div&gt;</pre>
+<p>You can add your events like the code format below.</p>
+<pre>&lt;div id='external-events'&gt;<br />	&lt;div class='external-event'&gt;My friend's birthday event&lt;/div&gt;<br />	&lt;div class='external-event'&gt;My wedding&lt;/div&gt;<br />	&lt;div class='external-event'&gt;Company party&lt;/div&gt;<br />	&lt;div class='external-event'&gt;Island hopping event&lt;/div&gt;<br />	&lt;div class='external-event'&gt;Fun run event&lt;/div&gt;<br />&lt;/div&gt; </pre>
+	
+    <br />
+    
+    <h3 id="alerts">3.4 jQuery Alerts</h3>
+    <p>This template is using jQuery Alerts plugin to have a custom alert box instead of using browser's alert box. jQuery alerts works by adding the following code below in your page.</p>
+    <p>Add the line of code below in your &lt;head&gt; tag</p>
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery.alerts.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function(){
+   jQuery('.alertboxbutton').click(function(){<br />	     jAlert('This is a custom alert box', 'Alert Dialog');<br />      return false;<br />   });
+});
+&lt;/script&gt;
+
+//ADD THIS ANYWHERE IN THE &lt;BODY&gt; ELEMENT OF YOUR PAGE//
+&lt;a href=&quot;&quot; class=&quot;alertboxbutton&quot;&gt;Basic Alert&lt;/a&gt;</pre>
+
+	<p>The first parameter is the alert message and the second parameter is the title of the alert box. To know more about using this plugin, you may go to site <a href="http://www.abeautifulsite.net/blog/2008/12/jquery-alert-dialogs/">http://www.abeautifulsite.net/blog/2008/12/jquery-alert-dialogs/</a></p>
+    
+    <br />
+    
+    <h3 id="autogrow">3.5 Autogrow textarea</h3>
+    <p>This plugins allows texarea to grow vertically when text is typed in. Below codes must be present in your page when you want to use this plugin.</p>
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery.autogrow-textarea.js&quot;&gt;&lt;/script&gt;<br />&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function(){<br />   jQuery('#textarea').autogrow();
+});
+&lt;/script&gt;
+
+//ADD THIS ANYWHERE INSIDE OF &lt;BODY&gt; ELEMENT OF YOUR PAGE
+&lt;textarea id=&quot;textarea&quot;&gt;&lt;/textarea&gt;</pre>
+
+	<br />
+    
+    <h3 id="slider">3.6 Content Slider</h3>
+    
+    <p>This template have a widget uses a content slider. To use this plugin, below code must be present in your page.</p>
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery.bxSlider.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function(){
+jQuery('#slidercontent').bxSlider({<br />		prevText: '',<br />		nextText: ''<br />	});
+});
+&lt;/script&gt;
+
+//ADD THIS ANYWHERE IN YOUR &lt;BODY&gt; ELEMENT OF YOUR PAGE
+&lt;ul id=&quot;slidercontent&quot;&gt;
+   &lt;li&gt;...&lt;/li&gt;
+   &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+	<p>To learn more about using this plugin, go to site <a href="http://bxslider.com/">http://bxslider.com/</a></p>
+    
+    <br />
+    
+    <h3 id="colorbox">3.7 ColorBox (lightbox)</h3>
+    
+    <p>To use colorbox in any of your page by using this template, code below must be present in your page.</p>
+    
+    <pre>// ADD THIS IN YOUR &lt;head&gt; TAG //
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery.colorbox-min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascrpt&quot;&gt;
+jQuery(document).ready(function(){
+   jQuery('.filemgr_menu a.preview').colorbox();
+});
+&lt;/script&gt;
+
+// ADD THIS ANYWHERE ON YOUR &lt;body&gt; ELEMENT //
+&lt;a href=&quot;images/pic1.png&quot; class=&quot;preview&quot;&gt;View File&lt;/a&gt;</pre>
+    
+    
+    <br />
+    
+    
+    <h3 id="colorpicker">3.8 Color Picker</h3>
+    
+    <p>This template uses <a href="www.eyecon.ro">ColorPicker</a> by Stefan Petre. You can visit <a href="www.eyecon.ro">www.eyecon.ro</a> to use more of the options and methods for this plugin.
+    <p>To add colorpicker in your page, simply add the below code into your head tag</p>
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery.colorbox-min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function(){
+	jQuery('#colorpicker').ColorPicker({
+       onSubmit: function(hsb, hex, rgb, el) {
+          jQuery(el).val(hex);
+             jQuery(el).ColorPickerHide();
+          },
+       onBeforeShow: function () {
+          jQuery(this).ColorPickerSetColor(this.value);
+       }
+    }).bind('keyup', function(){ jQuery(this).ColorPickerSetColor(this.value);});
+});
+&lt;/script&gt;</pre>
+
+	<p>After you add the above code in your head, simply add the html code below anywhere you like the colopicker to display.</p>
+    
+    <pre>&lt;input id=&quot;colorpicker&quot; type=&quot;text&quot; /&gt;</pre>
+    
+    <br />
+    
+    <h3 id="datepicker" class="datepicker">3.9 Datepicker</h3>
+    
+    <p>Datepicker is part of the <a href="http://jqueryui.com">jQuery UI</a> plugin. To add this in your page a below code is added in the head.</p>
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery-ui-1.8.16.custom.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function(){
+	jQuery( &quot;#datepicker&quot; ).datepicker();
+});
+&lt;/script&gt;
+
+//add this anywhere in your page
+&lt;input id=&quot;datepicker&quot; type=&quot;text&quot; class=&quot;width50&quot; /&gt;</pre>
+    
+    <br />
+    <h3 id="growl">4.0 Growl Notification</h3>
+    <p>This template uses growl notification (jGrowl) by Stan Lemon. You can use growl in any events of your scripts to display notification. You can use growl by adding the code below.</p>
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery.jgrowl.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function(){
+	//you can insert the below code in any events like click, hover,submit, focus, etc.
+	jQuery.jGrowl(&quot;Hello world!&quot;);
+});
+&lt;/script&gt;</pre>
+
+
+	<br />
+    
+    <h3 id="tabs">4.1 Tabs</h3>
+    
+    <p>Tabs is part of the <a href="http://jqueryui.com">jQuery UI</a> plugin. To add this in your page a below code is added in the head.</p>
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery-ui-1.8.16.custom.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function(){
+	jQuery( &quot;#tabs&quot; ).tabs();
+});
+&lt;/script&gt;
+
+//add this anywhere in your page
+&lt;div id=&quot;tabs&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#tabs-1&quot;&gt;Sample Tab A&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#tabs-2&quot;&gt;Sample Tab B&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#tabs-3&quot;&gt;Sample Tab C&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div id=&quot;tabs-1&quot;&gt; ... &lt;/div&gt;
+	&lt;div id=&quot;tabs-2&quot;&gt; ... &lt;/div&gt;
+	&lt;div id=&quot;tabs-3&quot;&gt; ... &lt;/div&gt;
+&lt;/div&gt;&lt;!-- #tabs --&gt;</pre>
+
+    <br />
+    
+    <h3 id="accordion">4.2 Accordion</h3>
+    
+    <p>Accordion is part of the <a href="http://jqueryui.com">jQuery UI</a> plugin. To add this in your page a below code is added in the head.</p>
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery-ui-1.8.16.custom.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function(){
+	jQuery( &quot;.accordion&quot; ).accordion();
+});
+&lt;/script&gt;
+
+//add this anywhere in your page
+&lt;div class=&quot;accordion&quot;&gt;
+	&lt;h3&gt;Title here&lt;/h3&gt;
+	&lt;div&gt; content goes here... &lt;/div&gt;
+	&lt;h3&gt;Title here&lt;/h3&gt;
+	&lt;div&gt; content goes here... &lt;/div&gt;
+	&lt;h3&gt;Title here&lt;/h3&gt;
+	&lt;div&gt; content goes here... &lt;/div&gt;
+&lt;/div&gt;&lt;!-- accordion --&gt;</pre>
+
+
+	<br />
+    
+    <h3 id="slider">4.3 Slider</h3>
+    
+    <p>Slider is part of the <a href="http://jqueryui.com">jQuery UI</a> plugin. More options available in jQuery UI website. To add this in your page a below code is added in the head.</p>
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery-ui-1.8.16.custom.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function(){
+	jQuery(&quot;#slider&quot;).slider({value: 40});
+});
+&lt;/script&gt;
+
+//add this anywhere in your page
+&lt;div id=&quot;slider&quot;&gt;&lt;/div&gt;</pre>
+
+<br />
+
+	<h3 id="charts">4.4 Charts</h3>
+    
+    <p>This template uses <a href="http://code.google.com/p/flot/">Flot</a> to create chart for your reports or anywhere on your page. To use this plugin just add the line of code below.</p>
+    
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery.flot.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery.flot.pie.min.js&quot;&gt;&lt;/script&gt;</pre>
+
+	<p>To know how this theme implemented the flot you can open the file <strong>charts.js</strong> at <strong>js/custom/</strong> folder.</p>
+    <p>To know more how to use this plugin you can visit the page at <a href="http://code.google.com/p/flot/">http://code.google.com/p/flot/</a>    </p>
+    
+    <h3 id="chat">4.5 Chat</h3>
+    <p>In this template, I have added chat page for you to use when you are planning to have a chat support for your backend project. I did'nt use any jQuery plugins to work on this template, I just made it my own so feel free to see the <strong><em>js/custom/chat.js</em></strong> file to know how the functionality works.</p>
+    
+    <h3 id="validation">4.6 Form Validation</h3>
+    
+    <p>This template uses form validation by <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">Jörn Zaefferer</a>. To use this plugin, simply add the line of code below</p>
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/plugins/jquery.validate.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function(){
+	jQuery(&quot;#form&quot;).validate({
+		rules: {
+			name: &quot;required&quot;,
+			email: {
+				required: true,
+				email: true,
+			},
+			occupation: &quot;required&quot;
+		},
+		messages: {
+			name: &quot;Please enter your name&quot;,
+			email: &quot;Please enter a valid email address&quot;,
+			occupation: &quot;Please select your occupation&quot;
+		}
+	});
+});
+&lt;/script&gt;
+
+&lt;form id=&quot;form&quot; action=&quot;&quot; method=&quot;post&quot;&gt; ... &lt;/form&gt;</pre>
+    
+    <br />
+    
+    <h3 id="wizard">4.7 Wizard Form</h3>
+    <p>In this template, I use jQuery plugin called smartWizard for wizard form template. This plugin is developed by TechLaboratory. You can visit <a href="http://techlaboratory.net/products.php?product=smartwizard">http://techlaboratory.net/products.php?product=smartwizard</a> for more information. The code below is the one on how I use it for this template.</p>
+    <pre>jQuery(document).ready(function(){
+	// Smart Wizard
+	jQuery('#wizard').smartWizard({onFinish: onFinishCallback});
+	function onFinishCallback(){
+		alert('Finish Clicked');
+	} 
+	// A Wizard form in modal box
+	jQuery(&quot;.inline&quot;).colorbox({inline:true, width: '60%', height: '500px'});
+});</pre>
+    <p>&nbsp;</p>
+	<br />
+    <h2 id="credits">Sources &amp; Credits</h2>
+    
+    <p>I've used the following images, icons or other files as listed. </p>
+    
+    <ul>
+    	<li><a href="http://iconsweets.com/">IconSweets</a> - Free Icons by YummyGum</li>
+        <li><a href="http://iconsweets2.com">IconSweets2</a> - Even more free icons by YummyGum</li>
+        <li><a href="http://www.graphicrating.com/">Diagram Icon set</a> by <a href="http://www.doublejdesign.co.uk/">Double J Design</a></li>
+        <li><a href="http://jquery.com">jQuery</a> by John Resig</li>
+        <li><a href="http://jqueryui.com">jQuery UI</a></li>
+        <li><a href="http://www.tinymce.com/">WYSIWYG TinyMCE</a> - by TinyMCE</li>
+        <li><a href="http://www.eyecon.ro/colorpicker/">ColorPicker</a> by Stefan Petre</li>
+        <li><a href="http://www.google.com.ph/url?sa=t&amp;rct=j&amp;q=elfinder&amp;source=web&amp;cd=1&amp;ved=0CBsQFjAA&amp;url=http%3A//elrte.org/elfinder&amp;ei=G8bhToeCObD5mAXr_YjxBA&amp;usg=AFQjCNG-MJ_GoNB4gqV4Uv5wDJMa1yK1kA&amp;sig2=2ripaJaI4041uiWaniTVlg&amp;cad=rja">FullCalendar v1.5.2</a> by Adam Shaw</li>
+        <li><a href="http://abeautifulsite.net/">jQuery Alert Dialogs Plugin</a> by Cory S.N. LaViska</li>
+        <li><a href="http://jacklmoore.com/colorbox/">ColorBox v1.3.18</a></li>
+        <li><a href="http://code.google.com/p/flot/">Flot Chart</a></li>
+        <li><a href="http://stanlemon.net/24">jGrowl 1.2.6</a> by Stan Lemon</li>
+        <li><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">jQuery Validation</a> by Jörn Zaefferer</li>
+        <li><a href="http://www.fontsquirrel.com/fonts/Bebas">Bebas Font</a></li>
+        <li><a href="http://techlaboratory.net/products.php?product=smartwizard">Smart Wizard</a> by TechLaboratory</li>
+        <li><a href="http://cssglobe.com/post/7161/jquery-plugin-simplest-twitterlike-dynamic-character-count-for-textareas">Character Count Plugin</a> - Alen Grakalic</li>
+        <li><a href="http://www.technoreply.com/autogrow-textarea-plugin/">AutoGrow Textarea</a></li>
+        <li><a href="http://bxcreative.com">BxSlider</a> - Steven Wanderski</li>
+        <li><a href="https://github.com/carhartl/jquery-cookie">jQuery Cookie Plugin</a> - Klaus Hartl</li>
+        <li><a href="http://rocha.la">jQuery Slim Scroll</a> - Piotr Rochala</li>
+        <li><a href="http://xoxco.com/projects/code/tagsinput/">Tags Input</a> - Xoxco</li>
+        <li><a href="http://uniformjs.com">jQuery Uniform</a></li>
+    </ul>
+    
+    
+    <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+    
+    Mienard Lumaad (themepixels)
+    
+	<br /><br />
+  </div><!-- wrapperinner -->
+</div><!-- wrapper -->
+</body>
+</html>

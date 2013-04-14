@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Widgets | Amanda Admin Template</title>
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link id="addonstyle" rel="stylesheet" href="css/style.contrast.css" type="text/css" />
+<script type="text/javascript" src="js/plugins/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.bxSlider.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="js/custom/general.js"></script>
+<script type="text/javascript" src="js/custom/widgets.js"></script>
+<!--[if IE 9]>
+    <link rel="stylesheet" media="screen" href="css/style.ie9.css"/>
+<![endif]-->
+<!--[if IE 8]>
+    <link rel="stylesheet" media="screen" href="css/style.ie8.css"/>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<style>
+#datepicker {
+    font-size:11px;
+    margin-left:2px;
+}
+</style>
+<body class="withvernav">
+
+<div class="bodywrapper">
+    <div class="topheader">
+        <div class="left">
+            <h1 class="logo">CG.<span>ControlPanel</span></h1>
+            <span class="slogan">Todos los procesos. Un solo lugar</span>
+            
+            <div class="search">
+            	<form action="" method="post">
+                	<input type="text" name="keyword" id="keyword" value="Buscar Proceso" />
+                    <button class="submitbutton"></button>
+                </form>
+            </div><!--search-->
+            
+            <br clear="all" />
+            
+        </div><!--left-->
+        
+        <div class="right">
+        	<div class="notification">
+                <a class="count" href="ajax/notifications.html"><span>9</span></a>
+        	</div>
+            <div class="userinfo">
+            	<img src="images/thumbs/avatar.png" alt="" />
+                <span>Carlos Vazquez</span>
+            </div><!--userinfo-->
+            
+            <div class="userinfodrop">
+            	<div class="avatar">
+                	<a href=""><img src="images/thumbs/avatarbig.png" alt="" /></a>
+                    <div class="changetheme">
+                    	Cambiar Tema: <br />
+                    	<a class="default"></a>
+                        <a class="blueline"></a>
+                        <a class="greenline"></a>
+                        <a class="contrast"></a>
+                        <a class="custombg"></a>
+                    </div>
+                </div><!--avatar-->
+                <div class="userdata">
+                	<h4>Carlos Vazquez</h4>
+                    <span class="email">carlos_daniel_vazquez@hotmail.com</span>
+                    <ul>
+                    	<li><a href="editprofile.html">Editar Perfíl</a></li>
+                        <li><a href="help.html">Ayuda</a></li>
+                        <li><a href="index.html">Salir</a></li>
+                    </ul>
+                </div><!--userdata-->
+            </div><!--userinfodrop-->
+        </div><!--right-->
+    </div><!--topheader-->
+    
+    
+    <div class="header">
+    	<ul class="headermenu">
+        	<li class="current"><a href="home.html"><span class="icon icon-flatscreen"></span>Tablero</a></li>
+            <li><a href="reports.html"><span class="icon icon-chart"></span>Reportes</a></li>
+        </ul>
+        
+         <div class="headerwidget">
+        	<div class="earnings">
+            	<div class="one_half">
+                	<h4>Agendados</h4>
+                    <h2>042</h2>
+                </div><!--one_half-->
+                <div class="one_half last alignright">
+                	<h4>Ejecutados</h4>
+                    <h2>023</h2>
+                </div><!--one_half last-->
+            </div><!--earnings-->
+        </div><!--headerwidget-->
+        
+        
+    </div><!--header-->
+    
+    <div class="vernav2 iconmenu">
+    	<ul>
+        	<li><a href="#formsub" class="editor">Administración</a>
+            	<span class="arrow"></span>
+            	<ul id="formsub">
+               		<li><a href="Processes.html">Procesos</a></li>
+                </ul>
+            </li>
+            <li><a href="#formop" class="calendar">Operaciones</a>
+                <span class="arrow"></span>
+            	<ul id="formop">
+               		<li><a href="home.html">Panel de Control</a></li>
+                </ul>
+            </li>
+            <li><a href="support.html" class="support">Ayuda</a></li>
+            <li><a href="index.html" class="error">Salir</a></li>
+        </ul>
+        <a class="togglemenu"></a>
+      
+        <div class="widgetcontent">
+            <div id="datepicker"></div>
+        </div><!--widgetcontent-->
+
+        
+    </div><!--leftmenu-->
+        
+    <div class="centercontent">
+      <div class="pageheader notab">
+            <h1 class="pagetitle">Tablero de Control</h1>
+            <span class="pagedesc">Agende sus Procesos Aquí</span>
+            
+        </div><!--pageheader-->
+        <div id="contentwrapper" class="contentwrapper widgetpage">
+
+        <div>
+        
+        <div style="width:50%; float:left;height:700px">
+            
+          <div class="widgetbox">
+                    <div class="title"><h3>Procesos</h3></div>
+                    <div class="widgetcontent">
+                        <div id="tabs">
+                            <ul>
+                                <li><a href="#tabs-1">Favoritos</a></li>
+                                <li><a href="#tabs-2">Diarios</a></li>
+                                <li><a href="#tabs-3">General</a></li>
+                            </ul>
+                            <div id="tabs-1">
+                               <div class="widgetcontent padding0 statement">
+                        <table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+                            <colgroup>
+                                <col class="con0" />
+                                <col class="con1" />
+                                <col class="con0" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="head0">Date</th>
+                                    <th class="head1">Sales</th>
+                                    <th class="head0">Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01/12/12</td>
+                                    <td>10</td>
+                                    <td>$250.12</td>
+                                </tr>
+                                <tr>
+                                    <td>01/11/12</td>
+                                    <td>5</td>
+                                    <td>$100.43</td>
+                                </tr>
+                                <tr>
+                                    <td>01/12/12</td>
+                                    <td>10</td>
+                                    <td>$250.12</td>
+                                </tr>
+                                <tr>
+                                    <td>01/11/12</td>
+                                    <td>5</td>
+                                    <td>$100.43</td>
+                                </tr>
+                                <tr>
+                                    <td>01/10/12</td>
+                                    <td>22</td>
+                                    <td>$1010.00</td>
+                                </tr>
+                                <tr>
+                                    <td>01/09/12</td>
+                                    <td>21</td>
+                                    <td>$1000.23</td>
+                                </tr>
+                                <tr>
+                                    <td>01/08/12</td>
+                                    <td>14</td>
+                                    <td>$500.22</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!--widgetcontent-->
+
+
+                            </div>
+                            <div id="tabs-2">
+                                <ul>
+                                    <li><a href="">Proin elit arcu, rutrum commodo</a></li>
+                                    <li><a href="">Aenean tempor ullamcorper leo</a></li>
+                                    <li><a href="">Vehicula tempus, commodo a, risus</a></li>
+                                    <li><a href="">Donec sollicitudin mi sit amet mauris</a></li>
+                                    <li><a href="">Curabitur nec arcu</a></li>
+                                </ul>
+                            </div>
+                            <div id="tabs-3">
+                                <ul class="thumb">
+                                    <li><a href="#"><img src="images/thumb/xsmall/thumb1.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/thumb/xsmall/thumb2.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/thumb/xsmall/thumb3.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/thumb/xsmall/thumb4.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/thumb/xsmall/thumb5.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/thumb/xsmall/thumb6.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/thumb/xsmall/thumb7.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/thumb/xsmall/thumb8.png" alt="" /></a></li>
+                                </ul>     
+                            </div>
+                        </div><!--#tabs-->
+                    </div><!--widgetcontent-->
+                </div><!--widgetbox-->
+       
+                <div class="widgetbox">
+                    <div class="title"><h3>Procesos Relacionados</h3></div>
+                    <div class="widgetcontent padding0 statement">
+                        <table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+                            <colgroup>
+                                <col class="con0" />
+                                <col class="con1" />
+                                <col class="con0" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="head0">Date</th>
+                                    <th class="head1">Sales</th>
+                                    <th class="head0">Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01/12/12</td>
+                                    <td>10</td>
+                                    <td>$250.12</td>
+                                </tr>
+                                <tr>
+                                    <td>01/11/12</td>
+                                    <td>5</td>
+                                    <td>$100.43</td>
+                                </tr>
+                                <tr>
+                                    <td>01/10/12</td>
+                                    <td>22</td>
+                                    <td>$1010.00</td>
+                                </tr>
+                                <tr>
+                                    <td>01/09/12</td>
+                                    <td>21</td>
+                                    <td>$1000.23</td>
+                                </tr>
+                                <tr>
+                                    <td>01/08/12</td>
+                                    <td>14</td>
+                                    <td>$500.22</td>
+                                </tr>
+                                      <tr>
+                                    <td>01/08/12</td>
+                                    <td>14</td>
+                                    <td>$500.22</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!--widgetcontent-->
+                </div><!--widgetbox-->            
+      </div>
+
+       <div style="width:50%; float:right;">
+            <div class="widgetbox">
+                    <div class="title"><h3>Agendados para Hoy&nbsp;
+                    <div style="float:right">
+                    <input type="radio" id=radio1 name="radio" checked="checked" value="Todos"><label for="radio1">&nbsp;Todos</label></input>&nbsp;
+                    <input type="radio" id=radio2 name="radio" value="Automáticos"><label for="radio2">&nbsp;Manual</label></input>&nbsp;
+                    <input type="radio" id=radio3 name="radio" value="Todos" /><label for="radio3">&nbsp;Automático</label></input>&nbsp;
+                    <input type="radio" id=radio4 name="radio" value="Automáticos" /><label for="radio4">&nbsp;Ejecutados</label></input>&nbsp;
+                    <input type="radio" id=radio5 name="radio" value="Todos" /><label for="radio5">&nbsp;Error</label></input>&nbsp;
+                    <input type="radio" id=radio6 name="radio" value="Automáticos" /><label for="radio6">&nbsp;Pendientes</label></input></div></h3></div>
+                    <div class="widgetcontent padding0 statement">
+                        <table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+                            <colgroup>
+                                <col class="con0" />
+                                <col class="con1" />
+                                <col class="con0" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="head0">Date</th>
+                                    <th class="head1">Sales</th>
+                                    <th class="head0">Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01/12/12</td>
+                                    <td>10</td>
+                                    <td>$250.12</td>
+                                </tr>
+                                <tr>
+                                    <td>01/11/12</td>
+                                    <td>5</td>
+                                    <td>$100.43</td>
+                                </tr>
+                                <tr>
+                                    <td>01/10/12</td>
+                                    <td>22</td>
+                                    <td>$1010.00</td>
+                                </tr>
+                                <tr>
+                                    <td>01/09/12</td>
+                                    <td>21</td>
+                                    <td>$1000.23</td>
+                                </tr>
+                                <tr>
+                                    <td>01/08/12</td>
+                                    <td>14</td>
+                                    <td>$500.22</td>
+                                </tr>
+                                   <tr>
+                                    <td>01/12/12</td>
+                                    <td>10</td>
+                                    <td>$250.12</td>
+                                </tr>
+                                <tr>
+                                    <td>01/11/12</td>
+                                    <td>5</td>
+                                    <td>$100.43</td>
+                                </tr>
+                                <tr>
+                                    <td>01/10/12</td>
+                                    <td>22</td>
+                                    <td>$1010.00</td>
+                                </tr>
+                                <tr>
+                                    <td>01/09/12</td>
+                                    <td>21</td>
+                                    <td>$1000.23</td>
+                                </tr>
+                                <tr>
+                                    <td>01/08/12</td>
+                                    <td>14</td>
+                                    <td>$500.22</td>
+                                </tr>
+                              
+                                <tr>
+                                    <td>01/11/12</td>
+                                    <td>5</td>
+                                    <td>$100.43</td>
+                                </tr>
+                                 <tr>
+                                    <td>01/12/12</td>
+                                    <td>10</td>
+                                    <td>$250.12</td>
+                                </tr>
+                                <tr>
+                                    <td>01/11/12</td>
+                                    <td>5</td>
+                                    <td>$100.43</td>
+                                </tr>
+                                <tr>
+                                    <td>01/10/12</td>
+                                    <td>22</td>
+                                    <td>$1010.00</td>
+                                </tr>
+                                <tr>
+                                    <td>01/09/12</td>
+                                    <td>21</td>
+                                    <td>$1000.23</td>
+                                </tr>
+                                <tr>
+                                    <td>01/08/12</td>
+                                    <td>14</td>
+                                    <td>$500.22</td>
+                                </tr>
+                                   <tr>
+                                    <td>01/12/12</td>
+                                    <td>10</td>
+                                    <td>$250.12</td>
+                                </tr>
+                                <tr>
+                                    <td>01/11/12</td>
+                                    <td>5</td>
+                                    <td>$100.43</td>
+                                </tr>
+                                <tr>
+                                    <td>01/10/12</td>
+                                    <td>22</td>
+                                    <td>$1010.00</td>
+                                </tr>
+                                  <tr>
+                                    <td>01/10/12</td>
+                                    <td>22</td>
+                                    <td>$1010.00</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div><!--widgetcontent-->
+                </div><!--widgetbox-->
+      </div>
+         </div>
+        </div><!--contentwrapper-->
+        
+	</div><!-- centercontent -->
+    
+    
+</div><!--bodywrapper-->
+
+</body>
+</html>

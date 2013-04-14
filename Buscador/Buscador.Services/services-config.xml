@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:tx="http://www.springframework.net/tx" >
+
+  <object id="textGlobalizator" type="Buscador.Domain.XmlBaseTextGloblalizator,Buscador.Domain">
+    <property name="BaseDirectory" value="${textGlobalizator.baseDirectory}"></property>
+  </object>
+
+  <object id="cacheProvider" type="Buscador.Domain.com.clarin.filters.SliceCacheProvider, Buscador.Domain">
+    <property name="SliceDao" ref="sliceDao"></property>
+    <property name="Cache">
+      <object name="springCache" type="Spring.Caching.NonExpiringCache, Spring.Core"></object>
+    </property>
+  </object>
+
+  <object name="appConfigPropertyHolder"
+            type="Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer, Spring.Core">
+
+    <property name="configSections">
+      <value>DatabaseConfiguration</value>      
+    </property>
+
+  </object>
+
+  <object id="urlOfuscator" type="Buscador.Domain.com.clarin.filters.UrlOfuscator, Buscador.Domain">
+    <property name="OfuscatedCharacters">
+      <dictionary>
+        <entry key="&amp;" value="WW" />
+        <entry key="=" value="YY" />
+      </dictionary>
+    </property>
+  </object>
+  
+  <object id="filterUrlBuilder" type="Buscador.Domain.com.clarin.filters.FilterUrlBuilder, Buscador.Domain" singleton="false">
+    <property name="BaseUrl" value="${filterUrlBuilder.baseUrl}"></property>
+    <property name="UrlOfuscator" ref="urlOfuscator"></property>
+  </object>
+
+  <object id="publicationDetailOldSiteUrlBuilder" type="Buscador.Domain.com.clarin.utils.DetailUrlBuilder, Buscador.Domain" singleton="false">
+    <property name="BaseUrl" value="${publicationDetailOldSiteUrlBuilder.baseUrl}"></property>
+  </object>
+
+  <!-- Proxy Factory para crear los proxies de trasaccion -->
+  <object id="txProxyTemplate"  abstract="true"
+            type="Spring.Transaction.Interceptor.TransactionProxyFactoryObject, Spring.Data">
+    <property name="ProxyTargetType" value="true" ></property>
+    <property name="PlatformTransactionManager" ref="transactionManager"/>
+    <property name="TransactionAttributes">
+      <name-values>
+        <add key="*" value="PROPAGATION_REQUIRED"/>
+      </name-values>
+    </property>
+  </object>
+
+  <!-- Implementaciones -->
+  <object id="indexServiceImpl" type="Buscador.Services.com.clarin.services.impl.IndexServicePublicationSolrImpl, Buscador.Services">
+    <constructor-arg name="serverUrl" value="${solr.publications.url}"/>
+    <property name="FacetConfiguration" ref="facetConfiguration"></property>
+    <property name="PublicationDao" ref="publicationDao"></property>
+    <property name="CurrencyDao" ref="currencyDao"></property>
+    <property name="DetailUrlBuilder" ref="publicationDetailOldSiteUrlBuilder"></property>
+  </object>
+
+  <object id="XmlParseComponentImpl" type="Buscador.Domain.XmlParseComponent, Buscador.Domain">
+  </object>
+
+  <object id="newsServiceImpl" type="Buscador.Services.com.clarin.services.impl.NewsService, Buscador.Services">
+    <property name="XmlParseComponet" ref="XmlParseComponentImpl"></property>
+    <property name="NewsLastSet" value="${news.LastSet}"></property>
+    <property name="RequestCreatorService" ref="requestCreatorService"></property>
+  </object>
+
+
+  <object id="indexServiceAgencyImpl" type="Buscador.Services.com.clarin.services.impl.IndexServiceAgencySolrImpl, Buscador.Services">
+    <constructor-arg name="serverUrl" value="${solr.agency.url}"/>
+  </object>
+
+  <object id="indexServiceVersionCatalogImpl" type="Buscador.Services.com.clarin.services.impl.IndexServiceVersionCatalogInfoSolrImpl, Buscador.Services">
+    <constructor-arg name="serverUrl" value="${solr.versioncatalog.url}"/>
+  </object>
+
+  <object id="indexServiceSegmentCatalogImpl" type="Buscador.Services.com.clarin.services.impl.IndexServiceSegmentCatalogInfoSolrImpl, Buscador.Services">
+    <constructor-arg name="serverUrl" value="${solr.segmentcatalog.url}"/>
+  </object>
+
+  <object id="IndexServiceHomePublicationsImpl" type="Buscador.Services.com.clarin.services.impl.IndexServiceHomePublicationsImpl, Buscador.Services">
+    <constructor-arg name="serverUrl" value="${solr.publicationhome.url}"/>
+  </object>
+
+
+  <object id="bannerService" type="Buscador.Services.com.clarin.services.impl.BannerService, Buscador.Services" >
+    <property name="BannerDao" ref="bannerDao"></property>
+  </object>
+  
+  <object id="requestCreatorService" type="Buscador.Services.com.clarin.services.impl.RequestCreatorService, Buscador.Services" >
+  </object>
+  
+    <!-- Proxies con transacciones definidas -->
+  <object id="IndexService"  parent="txProxyTemplate" >
+      <property  name="Target" ref="indexServiceImpl">
+      </property>
+  </object>
+
+  <object id="jsonSerializer" type="Buscador.Domain.com.clarin.utils.JsonSerializer, Buscador.Domain" >
+  </object>
+
+</objects>

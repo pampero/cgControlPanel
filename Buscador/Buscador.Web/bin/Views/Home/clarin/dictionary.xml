@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dictionary>
+  <culture name="es-AR">
+    <add key="vehicle_make_id" value="Marca"></add>
+    <add key="vehicle_price" value="Precio"></add>
+    <add key="vehicle_model_id" value="Modelo"></add>
+    <add key="vehicle_version_id" value="Versión"></add>
+    <add key="vehicle_loc_prov_id" value="Provincia"></add>
+    <add key="vehicle_loc_loc_id" value="Localidad"></add>
+    <add key="vehicle_loc_part_id" value="Partido"></add>
+    <add key="vehicle_year" value="Año"></add>
+    <add key="vehicle_segment_id" value="Segmento"></add>
+    <add key="vehicle_type_id" value="Tipo de vehículo"></add>
+    <add key="vehicle_color_id" value="Color"></add>
+	  <add key="vehicle_km" value="Kilómetros"></add>
+    <add key="user_type" value="Tipo de vendedor"></add>
+    <add key="vehicle_price_absolute" value="Precio"></add>
+    <add key="AgencyUser" value="Agencia"></add>
+    <add key="EndUser" value="Particular"></add>
+    <add key="UsedCar" value="Usados"></add>
+    <add key="NewCar" value="Nuevos"></add>
+    <add key="vehicle_fuel_type_id" value="Combustible"></add>
+    <add key="HR_true" value="a Consultar"></add>
+    <add key="HR_false" value="Con Precio"></add>
+    <add key="HP_true" value="Con Foto"></add>
+    <add key="HP_false" value="Sin Foto"></add>
+    <add key="HasPhoto" value="Foto"></add>
+    <add key="CheckPrice" value="Precio"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_CLASSIC_OR_ANTIQUE" value="Autos clásicos o antiguos"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_RACING" value="Autos de competición"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_ENTERPRISE" value="Autos empresariales"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_TAXI" value="Taxi"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_CRASHED" value="Chocados"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_ARMORED" value="Blindados"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_DISABLED" value="Autos para discapacitados"></add>
+    <add key="feature_ids" value="Vehículos especiales"></add>
+
+
+  </culture>
+  <culture name="en-US">
+    <add key="vehicle_make_id" value="Marca"></add>
+    <add key="vehicle_price" value="Precio"></add>
+    <add key="vehicle_model_id" value="Modelo"></add>
+    <add key="vehicle_version_id" value="Versión"></add>
+    <add key="vehicle_loc_prov_id" value="Provincia"></add>
+    <add key="vehicle_loc_loc_id" value="Localidad"></add>
+    <add key="vehicle_loc_part_id" value="Partido"></add>
+    <add key="vehicle_year" value="Año"></add>
+    <add key="vehicle_segment_id" value="Segmento"></add>
+    <add key="vehicle_type_id" value="Tipo de vehículo"></add>
+    <add key="vehicle_color_id" value="Color"></add>
+	  <add key="vehicle_km" value="Kilómetros"></add>
+    <add key="user_type" value="Tipo de vendedor"></add>
+    <add key="vehicle_price_absolute" value="Precio"></add>
+    <add key="AgencyUser" value="Agencia"></add>
+    <add key="EndUser" value="Particular"></add>
+    <add key="UsedCar" value="Usados"></add>
+    <add key="NewCar" value="Nuevos"></add>
+    <add key="vehicle_fuel_type_id" value="Combustible"></add>
+    <add key="HR_true" value="a Consultar"></add>
+    <add key="HR_false" value="Con Precio"></add>
+    <add key="HP_true" value="Con Foto"></add>
+    <add key="HP_false" value="Sin Foto"></add>
+    <add key="HasPhoto" value="Foto"></add>
+    <add key="CheckPrice" value="Precio"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_CLASSIC_OR_ANTIQUE" value="Autos clásicos o antiguos"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_RACING" value="Autos de competición"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_ENTERPRISE" value="Autos empresariales"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_TAXI" value="Taxi"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_CRASHED" value="Chocados"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_ARMORED" value="Blindados"></add>
+    <add key="PUBLISHABLE_ITEM_DATA_FEATURES_DISABLED" value="Autos para discapacitados"></add>
+    <add key="feature_ids" value="Vehículos especiales"></add>
+
+
+  </culture>
+</dictionary>
+

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:db="http://www.springframework.net/database"
+         xmlns:tx="http://www.springframework.net/tx" >
+
+  <!-- Property placeholder configurer for database settings -->
+  <object name="appConfigPropertyHolder"
+            type="Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer, Spring.Core">
+
+    <property name="configSections">
+      <value>DatabaseConfiguration</value>
+    </property>
+
+  </object>
+
+  <!-- Database and NHibernate Configuration -->
+  <db:provider id="dbProvider"
+                   provider="SqlServer-1.1"
+                   connectionString="${connection.string}"/>
+
+  <object id="sessionFactory" type="Buscador.Domain.com.clarin.utils.FluentNhibernateLocalSessionFactoryObject, Buscador.Domain">
+    <property name="DbProvider" ref="dbProvider"/>
+    
+    <property name="FluentNhibernateMappingAssemblies">
+      <list>
+        <value>Buscador.Domain</value>
+      </list>
+    </property>
+    <property name="HibernateProperties">
+      <dictionary>
+
+        <entry key="hibernate.connection.provider"
+               value="NHibernate.Connection.DriverConnectionProvider"/>
+
+        <entry key="dialect"
+               value="NHibernate.Dialect.MsSql2005Dialect"/>
+
+        <entry key="connection.driver_class"
+               value="NHibernate.Driver.SqlClientDriver"/>
+        
+        <entry key="proxyfactory.factory_class"
+              value="NHibernate.ByteCode.Spring.ProxyFactoryFactory, NHibernate.ByteCode.Spring"/>
+
+        <entry key="current_session_context_class" 
+               value="${hibernate.current_session_context_class}"/>
+        
+        
+      </dictionary>
+    </property>
+    
+
+  </object>
+
+  <object id="transactionManager"
+        type="Spring.Data.NHibernate.HibernateTransactionManager, Spring.Data.NHibernate21">
+    <property name="DbProvider" ref="dbProvider"/>
+    <property name="SessionFactory" ref="sessionFactory"/>
+
+  </object>
+
+
+  <object id="hibernateTemplate" type="Spring.Data.NHibernate.Generic.HibernateTemplate, Spring.Data.NHibernate21">
+    <property name="SessionFactory" ref="sessionFactory"/>
+  </object>
+
+  <tx:attribute-driven transaction-manager="transactionManager"/>
+
+
+</objects>

@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CGControlPanel.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="/css/style.default.css" type="text/css" />
+    <link id="addonstyle" rel="stylesheet" href="/css/style.contrast.css" type="text/css" />
+    <link rel="stylesheet" href="/css/dxe.fix.css" type="text/css" />
+    <script type="text/javascript" src="../js/plugins/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.bxSlider.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.slimscroll.js"></script>
+    <script type="text/javascript" src="../js/custom/general.js"></script>
+    <script type="text/javascript" src="../js/custom/widgets.js"></script>
+    <!--[if IE 9]>
+    <link rel="stylesheet" media="screen" href="css/style.ie9.css"/>
+<![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" media="screen" href="css/style.ie8.css"/>
+<![endif]-->
+    <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body class="withvernav">
+    <div class="topheader">
+        <div class="left">
+            <h1 class="logo">
+                CG.<span>ControlPanel</span></h1>
+            <span class="slogan">Todos los procesos. Un solo lugar</span>
+            <br clear="all" />
+        </div>
+        <!--left-->
+        <div class="right">
+            <div class="notification">
+                <a class="count" href="ajax/notifications.html"><span>9</span></a>
+            </div>
+            <div class="userinfo">
+                <img src="/images/thumbs/avatar.jpg" alt="" />
+                <span>Carlos Vazquez</span>
+            </div>
+            <!--userinfo-->
+            <div class="userinfodrop">
+                <div class="avatar">
+                    
+                    <div class="changetheme">
+                        Cambiar Tema:
+                        <br />
+                        <a class="default"></a><a class="blueline"></a><a class="greenline"></a><a class="contrast">
+                        </a><a class="custombg"></a>
+                    </div>
+                </div>
+                <!--avatar-->
+                <div class="userdata">
+                    <h4>Carlos Vazquez</h4>
+                    <span class="email">carlos.vazquez@outlook.com</span>
+                    <ul>
+                            <li><a href="index.html">Salir</a></li>
+                            <li><a href="help.html">Ayuda</a></li>
+                    </ul>
+                </div>
+                <!--userdata-->
+            </div>
+            <!--userinfodrop-->
+        </div>
+        <!--right-->
+    </div>
+    <!--Top Header-->
+     <div class="header">
+    	<ul class="headermenu">
+        	<li class="current"><a href="home.html"><span class="icon icon-flatscreen"></span>Tablero</a></li>
+            <li><a href="reports.html"><span class="icon icon-chart"></span>Reportes</a></li>
+        </ul>
+        
+         <div class="headerwidget">
+        	<div class="earnings">
+            	<div class="one_half">
+                	<h4>Agendados</h4>
+                    <h2>042</h2>
+                </div><!--one_half-->
+                <div class="one_half last alignright">
+                	<h4>Ejecutados</h4>
+                    <h2>023</h2>
+                </div><!--one_half last-->
+            </div><!--earnings-->
+        </div><!--headerwidget-->     
+    </div><!--header-->
+
+    <div class="vernav2 iconmenu">
+        <ul>
+            <li><a href="#formsub" class="editor">Administración</a> <span class="arrow"></span>
+                <ul id="formsub">
+                    <li><a href="Processes.html">Procesos</a></li>
+                    <li><a href="Processes.html">Usuarios</a></li>
+                </ul>
+            </li>
+            <li><a href="#formop" class="calendar">Operaciones</a> <span class="arrow"></span>
+                <ul id="formop">
+                    <li><a href="home.html">Panel de Control</a></li>
+                </ul>
+            </li>
+            <li><a href="support.html" class="support">Ayuda</a></li>
+            <li><a href="index.html" class="error">Salir</a></li>
+        </ul>
+        <a class="togglemenu"></a>
+        <br />
+        <br />
+    </div>
+    <!--leftmenu-->
+    
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    
+    <div class="clear">
+    </div>
+</body>
+</html>

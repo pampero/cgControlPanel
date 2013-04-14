@@ -1,0 +1,20 @@
+﻿/* FORM */
+div#basicform div.par div.field table { border:0; }
+div#basicform div.par div.field table td { border:0;}
+div#basicform div.par input, div#basicform div.par textarea { background:whitesmoke; }
+div#basicform div.par input:focus, div#basicform div.par textarea:focus { background:#FFF; }
+div#basicform div.par .combobox input { padding-right: 0px; padding-left: 2px; }
+div#basicform div.par .field.smallinput table { width: 50%; min-width:100px; }
+div#basicform div.par .field.mediuminput table { width: 70%; min-width:200px;}
+div#basicform div.par .field.longinput table { width: 100%; min-width:300px; }
+div#basicform div.par .rightbutton {float:right;margin:10px 5px;}
+.dxeButtonEditButton { padding-bottom:4px;}
+/* Grid 100% width */
+table.allwidthgrid {background: #FCFCFC;border: 1px solid #DDD;}
+table.allwidthgrid td {font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;}
+table.allwidthgrid .dxgvHeader {color: #333;background: #FCFCFC;border: 1px solid #DDD;line-height: 21px; vertical-align: middle;font-weight: bold; }
+table.allwidthgrid .dxgvFilterRow {background: #FCFCFC;border: 1px solid #DDD;}
+table.allwidthgrid .dxgvFilterRow .dxeTextBox {border: 1px solid #DDD;}
+table.allwidthgrid .dxgvFilterRow input[type="text"] {border:0px;padding:0px;width:100%;}
+table.allwidthgrid .dxgvDataRow {font-size: 12px;color: #666;line-height: 21px; }
+table.allwidthgrid .dxgvFilterBar {background: #FCFCFC;}

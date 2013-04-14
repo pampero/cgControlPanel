@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <object id="facetTableName" type="Buscador.Domain.com.clarin.dao.FacetTableName">
+    <property name="FacetTableNameMap">
+      <dictionary>
+        <entry key="vehicle_make_id">
+          <object id="vehicleMakeValue" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="VehicleBrand"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Name"></property>
+          </object>
+        </entry>
+        <entry key="vehicle_model_id">
+          <object id="vehicleModelValue" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="VehicleModel"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Name"></property>
+          </object>
+        </entry>
+        <entry key="vehicle_version_id">
+          <object id="vehicleVersionValue" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="VehicleVersion"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Name"></property>
+          </object>
+        </entry>
+        <entry key="vehicle_loc_prov_id">
+          <object id="vehicleTownValue" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="GeoLocationItem"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Name"></property>
+          </object>
+        </entry>
+        <entry key="vehicle_loc_part_id">
+          <object id="vehicleCityValue" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="GeoLocationItem"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Name"></property>
+          </object>
+        </entry>
+        <entry key="vehicle_loc_loc_id">
+          <object id="vehicleStateValue" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="GeoLocationItem"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Name"></property>
+          </object>
+        </entry>
+        <entry key="vehicle_segment_id">
+          <object id="vehicleSegmentValue" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="VehicleSegment"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Name"></property>
+          </object>
+        </entry>
+        <entry key="vehicle_fuel_type_id">
+          <object id="vehicleFuelType" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="Fuel"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Name"></property>
+          </object>
+        </entry>
+        <entry key="vehicle_type_id">
+          <object id="vehicleType" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="PublishableItemType"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Name"></property>
+          </object>
+        </entry>
+        <entry key="vehicle_color_id">
+          <object id="vehicleColor" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="Colour"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Name"></property>
+          </object>
+        </entry>
+        <entry key="publication_type_id">
+          <object id="publicationType" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="OfertasTipo"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Descripcion"></property>
+          </object>
+        </entry>
+        <!--<entry key="user_type">
+          <object id="userType" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="UserTypes"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Nombre"></property>
+          </object>
+        </entry>-->
+        <entry key="payment_method">
+          <object id="paymentMethod" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="PublishableItemPaymentMethod"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="Name"></property>
+          </object>
+        </entry>
+
+        <entry key="feature_ids">
+          <object id="specialFeatures" type="Buscador.Domain.com.clarin.dao.TableNameXIdColumn, Buscador.Domain">
+            <property name="TableName" value="VehicleFeaturesDefinition"></property>
+            <property name="IdColumnName" value="Id"></property>
+            <property name="ValueColumnName" value="KeyString"></property>
+          </object>
+        </entry>
+        
+      </dictionary>
+    </property>
+  </object>
+  
+  <!--
+      vehicle_version_id: VE
+      vehicle_model_id: MO
+      vehicle_make_id: MA
+      vehicle_loc_loc_id: LO
+      vehicle_loc_part_id: PA
+      vehicle_loc_prov_id: PV
+      tipoVendedor: ?
+      vehicle_year: YE
+      vehicle_segment_id: SG
+      vehicle_type_id: VT
+      vehicle_color_id: VC
+      vehicle_km: VK
+      user_type: UT
+      user_uid: UI
+      vehicle_fuel_type_id: VF
+      vehicle_price_absolute: PR
+      publication_type_id: PT
+      PageSize: PS
+      Page: PG
+      Search Order: SO {propiedad}A ó {propiedad}D
+  -->
+
+  <object id="versionFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="vehicle_version_id" />
+    <property name="Branch" value="1"></property>
+    <property name="Level" value="3"></property>
+    <property name="Key" value="VE"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="4"></property>
+  </object>
+  
+  <object id="modeloFacet" type="Buscador.Domain.com.clarin.facets.HierarchicalFacet, Buscador.Domain">
+    <property name="Child" ref="versionFacet" />
+    <property name="Name" value="vehicle_model_id" />
+    <property name="Branch" value="1"></property>
+    <property name="Level" value="2"></property>
+    <property name="Key" value="MO"></property>
+    <property name="UseForSeo" value="true"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="3"></property>
+  </object>
+  
+  <object id="marcaFacet" type="Buscador.Domain.com.clarin.facets.HierarchicalFacet, Buscador.Domain" >
+    <property name="Child" ref="modeloFacet" />
+    <property name="Name" value="vehicle_make_id" />
+    <property name="Branch" value="1"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="MA"></property>
+    <property name="UseForSeo" value="true"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="2"></property>
+  </object>
+
+  <object id="localidadFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="vehicle_loc_loc_id" />
+    <property name="Branch" value="2"></property>
+    <property name="Level" value="3"></property>
+    <property name="Key" value="LO"></property>
+    <property name="UseForSeo" value="true"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="7"></property>
+  </object>
+
+  <object id="partidoFacet" type="Buscador.Domain.com.clarin.facets.HierarchicalFacet, Buscador.Domain">
+    <property name="Child" ref="localidadFacet" />
+    <property name="Name" value="vehicle_loc_part_id" />
+    <property name="Branch" value="2"></property>
+    <property name="Level" value="2"></property>
+    <property name="Key" value="PA"></property>
+    <property name="UseForSeo" value="true"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="6"></property>
+  </object>
+
+  <object id="provinciaFacet" type="Buscador.Domain.com.clarin.facets.HierarchicalFacet, Buscador.Domain">
+    <property name="Child" ref="partidoFacet" />
+    <property name="Name" value="vehicle_loc_prov_id" />
+    <property name="Branch" value="2"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="PV"></property>
+    <property name="UseForSeo" value="true"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="5"></property>
+  </object>
+
+  <object id="tipoVendedorFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="tipoVendedor" />
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="8"></property>
+  </object>
+
+  <object id="yearFacet" type="Buscador.Domain.com.clarin.facets.InputRangedFacet, Buscador.Domain">
+    <property name="Name" value="vehicle_year" />
+    <property name="Branch" value="3"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="YE"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="9"></property>
+  </object>
+
+  <object id="segmentFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="vehicle_segment_id" />
+    <property name="Branch" value="4"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="SG"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="10"></property>
+  </object>
+
+  <object id="vehicleTypeFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="vehicle_type_id" />
+    <property name="Branch" value="5"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="VT"></property>
+    <property name="UseForSeo" value="true"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="1"></property>
+  </object>
+
+  <object id="vehicleColorFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="vehicle_color_id" />
+    <property name="Branch" value="6"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="VC"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="11"></property>
+  </object>
+
+  <object id="vehicleKmFacet" type="Buscador.Domain.com.clarin.facets.InputRangedFacet, Buscador.Domain">
+    <property name="Name" value="vehicle_km" />
+    <property name="Branch" value="7"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="VK"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="12"></property>
+  </object>
+
+  <object id="userTypeFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="user_type" />
+    <property name="Branch" value="8"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="UT"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="13"></property>
+  </object>
+
+  <object id="companyFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="user_uid" />
+    <property name="Branch" value="9"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="UI"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="false"></property>
+    <property name="Priority" value="14"></property>
+  </object>
+
+  <object id="vehicleFuelTypeFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="vehicle_fuel_type_id" />
+    <property name="Branch" value="10"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="VF"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="15"></property>
+  </object>
+
+  <object id="priceFacet" type="Buscador.Domain.com.clarin.facets.InputRangedFacet, Buscador.Domain">
+    <property name="Name" value="vehicle_price_absolute" />
+    <property name="Branch" value="11"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="PR"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="16"></property>
+  </object>
+
+  <object id="specialFeaturesFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="feature_ids" />
+    <property name="Branch" value="12"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="FT"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="17"></property>
+  </object>
+
+  <object id="publicationTypeFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="publication_type_id" />
+    <property name="Branch" value="12"></property>
+    <property name="Level" value="3"></property>
+    <property name="Key" value="PT"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="false"></property>
+    <property name="Priority" value="17"></property>
+  </object>
+
+  <object id="publicationHasPhotoFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="HasPhoto" />
+    <property name="Branch" value="13"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="HP"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="18"></property>
+  </object>
+
+  <object id="publicationHasPriceFacet" type="Buscador.Domain.com.clarin.facets.SimpleFacet, Buscador.Domain">
+    <property name="Name" value="CheckPrice" />
+    <property name="Branch" value="14"></property>
+    <property name="Level" value="1"></property>
+    <property name="Key" value="HR"></property>
+    <property name="UseForSeo" value="false"></property>
+    <property name="Visible" value="true"></property>
+    <property name="Priority" value="19"></property>
+  </object>
+
+
+  <object id="facetHierarchy" type="Buscador.Domain.com.clarin.facets.FacetHierarchy,Buscador.Domain">
+    <property name="Facets">
+      <list element-type="Buscador.Domain.com.clarin.facets.IFacet, Buscador.Domain">
+        <ref object="publicationHasPriceFacet"></ref>
+        <ref object="publicationHasPhotoFacet"></ref>
+        <ref object="vehicleFuelTypeFacet"></ref>
+        <ref object="companyFacet"></ref>
+        <ref object="userTypeFacet"></ref>
+        <!--<ref object="vehicleColorFacet"></ref>-->
+        <ref object="vehicleTypeFacet"></ref>
+        <ref object="specialFeaturesFacet" />
+        <ref object="segmentFacet"></ref>
+        <ref object="localidadFacet"></ref>
+        <ref object="partidoFacet"></ref>
+        <ref object="provinciaFacet"></ref>
+        <ref object="vehicleKmFacet"></ref>
+        <ref object="priceFacet"></ref>
+        <ref object="versionFacet"></ref>
+        <ref object="yearFacet"></ref>
+        <ref object="modeloFacet"></ref>
+        <ref object="marcaFacet"></ref>
+        <ref object="publicationTypeFacet"></ref>
+
+        
+      </list>
+    </property>
+  </object>
+  
+  <object id="facetConfiguration" type="Buscador.Domain.com.clarin.facets.FacetConfiguration, Buscador.Domain" >
+    <property name="FacetHierarchy" ref="facetHierarchy"></property>
+    <property name="PageSize" value="30"></property>
+  </object> 
+
+</objects>
+

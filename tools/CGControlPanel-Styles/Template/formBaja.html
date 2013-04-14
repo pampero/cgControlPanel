@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Forms | Amanda Admin Template</title>
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link id="addonstyle" rel="stylesheet" href="css/style.contrast.css" type="text/css" />
+<script type="text/javascript" src="js/plugins/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/charCount.js"></script>
+<script type="text/javascript" src="js/plugins/ui.spinner.min.js"></script>
+<script type="text/javascript" src="js/custom/general.js"></script>
+<script type="text/javascript" src="js/custom/forms.js"></script>
+
+<!--[if IE 9]>
+    <link rel="stylesheet" media="screen" href="css/style.ie9.css"/>
+<![endif]-->
+<!--[if IE 8]>
+    <link rel="stylesheet" media="screen" href="css/style.ie8.css"/>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body class="withvernav">
+
+<div class="bodywrapper">
+    <div class="topheader">
+        <div class="left">
+            <h1 class="logo">CG.<span>ControlPanel</span></h1>
+            <span class="slogan">Todos los procesos. Un solo lugar</span>
+            
+            <div class="search">
+            	<form action="" method="post">
+                	<input type="text" name="keyword" id="keyword" value="Buscar Proceso" />
+                    <button class="submitbutton"></button>
+                </form>
+            </div><!--search-->
+            
+            <br clear="all" />
+            
+        </div><!--left-->
+        
+        <div class="right">
+        	<div class="notification">
+                <a class="count" href="ajax/notifications.html"><span>9</span></a>
+        	</div>
+            <div class="userinfo">
+            	<img src="images/thumbs/avatar.png" alt="" />
+                <span>Carlos Vazquez</span>
+            </div><!--userinfo-->
+            
+            <div class="userinfodrop">
+            	<div class="avatar">
+                	<a href=""><img src="images/thumbs/avatarbig.png" alt="" /></a>
+                    <div class="changetheme">
+                    	Cambiar Tema: <br />
+                    	<a class="default"></a>
+                        <a class="blueline"></a>
+                        <a class="greenline"></a>
+                        <a class="contrast"></a>
+                        <a class="custombg"></a>
+                    </div>
+                </div><!--avatar-->
+                <div class="userdata">
+                	<h4>Carlos Vazquez</h4>
+                    <span class="email">carlos_daniel_vazquez@hotmail.com</span>
+                    <ul>
+                    	<li><a href="editprofile.html">Editar Perfíl</a></li>
+                        <li><a href="help.html">Ayuda</a></li>
+                        <li><a href="index.html">Salir</a></li>
+                    </ul>
+                </div><!--userdata-->
+            </div><!--userinfodrop-->
+        </div><!--right-->
+    </div><!--topheader-->
+    
+    
+    <div class="header">
+    	<ul class="headermenu">
+        	<li class="current"><a href="home.html"><span class="icon icon-flatscreen"></span>Tablero</a></li>
+    <!--        <li><a href="manageblog.html"><span class="icon icon-pencil"></span>Blog</a></li>
+            <li><a href="messages.html"><span class="icon icon-message"></span>Mensajes</a></li>-->
+            <li><a href="reports.html"><span class="icon icon-chart"></span>Reportes</a></li>
+        </ul>
+        
+         <div class="headerwidget">
+        	<div class="earnings">
+            	<div class="one_half">
+                	<h4>Agendados</h4>
+                    <h2>042</h2>
+                </div><!--one_half-->
+                <div class="one_half last alignright">
+                	<h4>Ejecutados</h4>
+                    <h2>023</h2>
+                </div><!--one_half last-->
+            </div><!--earnings-->
+        </div><!--headerwidget-->
+        
+        
+    </div><!--header-->
+    
+    <div class="vernav2 iconmenu">
+    	<ul>
+        	<li><a href="#formsub" class="editor">Administración</a>
+            	<span class="arrow"></span>
+            	<ul id="formsub">
+               		<li><a href="Processes.html">Procesos</a></li>
+                </ul>
+            </li>
+            <li><a href="#formop" class="calendar">Operaciones</a>
+                <span class="arrow"></span>
+            	<ul id="formop">
+               		<li><a href="home.html">Panel de Control</a></li>
+                </ul>
+            </li>
+            <li><a href="support.html" class="support">Ayuda</a></li>
+            <li><a href="index.html" class="error">Salir</a></li>
+        </ul>
+        <a class="togglemenu"></a>
+        <br /><br />
+    </div><!--leftmenu-->
+        
+        
+    <div class="centercontent">
+        
+          <div class="pageheader notab">
+            <h1 class="pagetitle">Eliminar Proceso</h1>
+                        <span class="pagedesc">This is a sample description of a page</span>
+            
+            </div><!--pageheader-->
+
+        <div id="contentwrapper" class="contentwrapper">
+        	
+                    <div class="notibar msginfo" style="display:none">
+                        <a class="close"></a>
+                        <p>This is an information message.</p>
+                    </div><!-- notification msginfo -->
+                    
+                    <div class="notibar msgsuccess" style="display:none">
+                        <a class="close"></a>
+                        <p>Proceso modificado correctamente.</p>
+                    </div><!-- notification msgsuccess -->
+                    
+                    <div class="notibar msgalert">
+                        <a class="close"></a>
+                        <p>No se eliminó el procesos ya que tiene ejecuciones agendadas.</p>
+                    </div><!-- notification msgalert -->
+                    
+                    <div class="notibar msgerror" style="display:none">
+                        <a class="close"></a>
+                        <p>This is an error message.</p>
+                    </div><!-- notification msgerror -->
+
+        	<div id="basicform" class="subcontent">
+        
+					<form class="stdform stdform2" method="post" action="">
+                        <p>
+                        	<label>Grupo</label>
+                            <span class="field"><input type="text" name="firstname" readonly="true" id="firstname2" class="longinput" /></span>
+                        </p>
+                        
+                        <p>
+                        	<label>Nombre</label>
+                            <span class="field"><input type="text" name="lastname" readonly="true" id="lastname2" class="longinput" /></span>
+                        </p>
+                        
+                        <p>
+                        	<label>Descripción <small>You can put your own description for this field here.</small></label>
+                            <span class="field"><textarea cols="80" rows="5" name="location" readonly="true" id="location2" class="longinput"></textarea></span>
+                        </p>
+
+                        <p>
+                        	<label>Tipo de Agendamiento</label>
+                            <span class="field"><input type="text" name="email" readonly="true" id="Text4" class="smallinput" /></span>
+                        </p>
+
+                        <p>
+                        	<label>Proceso de Configuración</label>
+                            <span class="field"><input type="text" name="email" readonly="true" id="email2" class="longinput" /></span>
+                        </p>   
+                        
+                         <p>
+                        	<label>Servidor</label>
+                            <span class="field"><input type="text" name="email" readonly="true" id="Text1"class="smallinput" /></span>
+                        </p>         
+
+                        <p>
+                        	<label>Base de Datos</label>
+                            <span class="field"><input type="text" name="email" readonly="true" id="Text2" class="smallinput" /></span>
+                        </p>         
+
+                        <p>
+                        	<label>Usuario</label>
+                            <span class="field"><input type="text" name="email" readonly="true" id="Text3" class="smallinput" /></span>
+                        </p>         
+
+                         <p>
+                        	<label>Procedimiento a Ejecutar</label>
+                            <span class="field"><input type="text" name="email" readonly="true" value="Procedimiento a Ejecutar" id="Text5" class="smallinput" /></span>
+                        </p>    
+                        
+                        <p class="stdformbutton">
+                        <span><small>Procesando&hellip;  </small><img src="Images/loaders/loader5.gif" alt="loading"  style="vertical-align:middle" /></span>
+                        	<button class="stdbtn btn_red">Eliminar</button>
+                            <input type="reset" class="reset radius2" value="Cancelar" />
+                        </p>
+                    	
+                <div class="contenttitle2">
+                	<h3>Agendamientos</h3>
+                </div><!--contenttitle-->
+                	
+                <table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+                    <colgroup>
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="head0">Rendering engine</th>
+                            <th class="head1">Browser</th>
+                            <th class="head0">Platform(s)</th>
+                            <th class="head1">Engine version</th>
+                            <th class="head0">CSS grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Trident</td>
+                            <td>Internet Explorer 4.0</td>
+                            <td>Win 95+</td>
+                            <td class="center">4</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr>
+                            <td>Trident</td>
+                            <td>Internet Explorer 5.0</td>
+                            <td>Win 95+</td>
+                            <td class="center">5</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr>
+                            <td>Trident</td>
+                            <td>Internet  Explorer 5.5</td>
+                            <td>Win 95+</td>
+                            <td class="center">5.5</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr>
+                            <td>Trident</td>
+                            <td>Internet Explorer 6</td>
+                            <td>Win 98+</td>
+                            <td class="center">6</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr>
+                            <td>Trident</td>
+                            <td>Internet Explorer 7</td>
+                            <td>Win XP SP2+</td>
+                            <td class="center">7</td>
+                            <td class="center">A</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+                        
+                      
+                    </form>
+					
+                    <br />
+
+            </div><!--subcontent-->
+            
+       
+        
+        </div><!--contentwrapper-->
+        
+	</div><!-- centercontent -->
+    
+    
+</div><!--bodywrapper-->
+
+</body>
+</html>

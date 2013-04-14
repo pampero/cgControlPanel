@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Error.Master.cs" Inherits="CGControlPanel.ErrorMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title ID="title" runat="server">CG.ControlPanel</title>
+    <link rel="stylesheet" href="/css/style.default.css" type="text/css" />
+    <link id="addonstyle" rel="stylesheet" href="/css/style.contrast.css" type="text/css" />
+    <link rel="stylesheet" href="/css/dxe.fix.css" type="text/css" />
+    <script type="text/javascript" src="../js/plugins/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.cookie.js"></script>
+    
+
+    <!--[if IE 9]>
+    <link rel="stylesheet" media="screen" href="css/style.ie9.css"/>
+    <link rel="stylesheet" media="screen" href="css/dxe.fix.ie9.css"/>
+<![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" media="screen" href="css/style.ie8.css"/>
+    <link rel="stylesheet" media="screen" href="css/dxe.fix.ie8.css"/>
+<![endif]-->
+    <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body class="bodywrapper">
+    
+    <div class="topheader">
+        <div class="left">
+            <h1 class="logo">
+                CG.<span>ControlPanel</span></h1>
+            <span class="slogan">Todos los procesos. Un solo lugar</span>
+            <br clear="all" />
+        </div>
+        <!--left-->
+        <div class="right">
+            <div class="notification">
+                <a class="count" href="/Dialogs/notifications.aspx"><span ID="notificationsLabel" runat="server"><asp:Literal ID="ltrlNotificationsCount" runat="server"></asp:Literal></span></a>
+            </div>
+            <div class="userinfo">
+                <img src="/images/thumbs/avatarsmall.jpg" alt="" />
+                <span><asp:Literal ID="ltrlUserName" runat="server"></asp:Literal></span>
+            </div>
+            <!--userinfo-->
+            <div class="userinfodrop">
+                <div class="avatar">
+                    <div class="changetheme">
+                        <img src="/images/thumbs/avatarbig.jpg" style="margin-left: -8px; margin-bottom: -20px;" />
+                     </div>
+                </div>
+                <!--avatar-->
+                <div class="userdata">
+                    <h4>Carlos Vazquez</h4>
+                    <span class="email"><asp:Literal ID="ltrlMail" runat="server"></asp:Literal></span>
+                    <ul>
+                            <li><a href="#">Ayuda</a></li>
+                            <li><a href="/account/login.aspx">Salir</a></li>
+                    </ul>
+                </div>
+                <!--userdata-->
+            </div>
+            <!--userinfodrop-->
+        </div>
+        <!--right-->
+    </div>
+    <!--Top Header-->
+     <div class="header">
+    	<ul class="headermenu">
+        	<li class="current"><a href="/Home.aspx"><span class="icon icon-flatscreen"></span>Tablero</a></li>
+            <%--<li><a href="#"><span class="icon icon-chart"></span>Reportes</a></li>--%>
+        </ul>
+        
+         <div class="headerwidget">
+        	<div class="earnings">
+            	<div class="one_half">
+                	<h4>Agendados</h4>
+                    <h2><asp:Literal ID="ltrlScheduledJobs" runat="server"></asp:Literal></h2>
+                </div><!--one_half-->
+                <div class="one_half last alignright">
+                	<h4>Ejecutados</h4>
+                    <h2><asp:Literal ID="ltrlExecutedJobs" runat="server"></asp:Literal></h2>
+                </div><!--one_half last-->
+            </div><!--earnings-->
+        </div><!--headerwidget-->     
+    </div><!--header-->
+        
+
+
+    
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    
+    <div class="clear">
+    </div>
+
+
+    <dxc:ASPxCallback ID="scheduleCounter" ClientInstanceName="scheduleCounter" runat="server" OnCallback="notificationCounter_Callback">
+        <ClientSideEvents CallbackComplete="function(s,e)
+        {
+            var param1 = e.result.split('|')[0];
+            var param2 = e.result.split('|')[1];
+
+            if  (param1 == 'NOTIFICATION')
+            {
+                jQuery('#notificationsLabel').text(param2);
+            }
+        }" />
+
+    </dxc:ASPxCallback>
+
+</body>
+</html>

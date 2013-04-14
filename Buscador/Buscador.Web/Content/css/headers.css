@@ -1,0 +1,156 @@
+html, body, div, h1, h2, h3, h4, h5, h6, ul, li, ol, p, form, dd, dl, dt, label{margin:0;padding:0;list-style:none;font-weight:normal;}
+body{font:12px/15px Arial, Helvetica, sans-serif;}
+img{border:0;}
+a{text-decoration:none;color:#00C; cursor:pointer;}
+a:hover{text-decoration:underline;}
+input, select, textarea{font:12px Arial, Helvetica, sans-serif;}
+textarea{margin:0;}
+html{text-shadow:#000 0 0 0;}/*QUITA EFECTO BOLD DEL SAFARI*/
+
+/*FIXES UTILES*/
+.dupfix{float:left;width:1px;height:0;line-height:0;visibility:hidden;}
+ul, ol, dl{position:relative;}
+
+/*CLEARFIX*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+
+/*CURVAS*/
+.Cv{background:no-repeat;width:4px;height:4px;position:absolute;font-size:0;}
+.Tl{top:0;left:0;background-position:left top;}
+.Tr{top:0;right:0;background-position:right top;}
+.Bl{bottom:0;left:0;background-position:left bottom;}
+.Br{bottom:0;right:0;background-position:right bottom;}
+
+/*HEADER*/
+.headerDautos{ background-color:#FFFFFF;}
+.headerDautos .headerREG{background: url(../../../Content/images/fd_headDeautos.gif) repeat-x;height:162px;}
+.headerDautos .logo{width:155px;height:83px;display:none}
+.headerDautos .headTOP{width:1004px;margin:0 auto;height: 111px;}
+.headerDautos .imgLogo{margin:11px 0 10px 29px;float:left;}
+.headerDautos .hLogin{color:#575659;float:right; margin-left: -554px;height: 36px; *left:375px; *position:relative;}
+.headerDautos .hLogin a{color:#ea7a1f;font:bold 12px Arial, Helvetica, sans-serif;text-decoration:none; }
+.headerDautos .hLogin .modFacebook a{background:url(../../../Content/images/bt_face.png) center center no-repeat; height:16px; width:16px; display:block; float:left;}
+.headerDautos .hLogin .modFacebook a:hover{ background:url(../../../Content/images/bt_face-inact.png) center center no-repeat;}
+.headerDautos .hLogin .modFacebook a.modTweet{ background: url(../../../Content/images/bt_twitter.png) center center no-repeat;height:16px; width:16px; display:block; margin-left:6px; margin-right:0px;}
+.headerDautos .hLogin .modFacebook a.modTweet:hover{ background:url(../../../Content/images/bt_twitter-hover.png) center center no-repeat;}
+
+.headerDautos .hLogin a:hover{ text-decoration:underline;}
+.headerDautos .hLogin img{padding-right:6px}
+.headerDautos .hLogin ul{padding:10px 11px  11px 26px;position:relative;background:url(../../../Content/images/fd_headlogin2.gif);background-repeat:repeat-x;background-position: 0 -2px}
+/*ie6*/
+* html .headerDautos .hLogin{ text-align:right; width:600px;}
+* html .headerDautos .hLogin ul{text-align: right; width:600px; float:right;}
+* html .headerDautos .hLogin .sombraR{}
+
+/*logueado y deslogueado*/
+.headerDautos .hLogin ul li.name{ display:none;}
+.headerDautos .hLogin ul.registrado li.name{ display:block;}
+.headerDautos .hLogin ul li.miCuenta{ display:none; padding:0 20px 0 4px;}
+.headerDautos .hLogin ul.registrado li.miCuenta{ display:block;}
+.headerDautos .hLogin ul li.salir{ display:none;}
+.headerDautos .hLogin ul.registrado li.salir{ display:block;}
+
+.headerDautos .hLogin li{float:left;background:url(../../../Content/images/ic_bulletLogin.gif) no-repeat right 2px;padding:0 0px 0 4px;}
+.headerDautos .hLogin li.first{padding-left:27px; padding:0 16px 0 14px;}
+.headerDautos .hLogin li.ingresa{ padding-right:16px;}
+.headerDautos .hLogin li.last{background:none;padding-right:0px;}
+.headerDautos .hLogin li.last.up {position:relative; top:-5px;}
+.headerDautos .hLogin .Cv{height:34px;font-size:0;}
+.headerDautos .hLogin .Br{background-image:url(../../../Content/images/cv_headlogin.gif);background-repeat:no-repeat;width:16px;bottom:4px;right:0;}
+.headerDautos .hLogin .Bl{background-image:url(../../../Content/images/cv_headloginL.gif);background-repeat:no-repeat;width:27px;bottom:4px;left:0; z-index:1;}
+.headerDautos .Hbanner{margin:7px 7px 7px 0;width:235px;height:60px;float:right;background-color:transparent; clear:right; *margin-top:42px; *position:relative; *left:20px;}
+.headerDautos .headBOTTOM{margin:0 auto;}
+.headerDautos .headBOTTOM .optionbar{ width:1004px; margin:0 auto; text-align:center; }
+.headerDautos .headBOTTOM ul{padding:13px 0px 0px 0px; margin:0 auto; display:inline-block; *padding-left:200px;}
+/*ie7 fix:first-child+html .headerDautos .headBOTTOM ul{ float:left; padding-left:220px;}*/
+/*ie6 fix* html .headerDautos .headBOTTOM ul{ float:left; padding-left:220px;}*/ 
+
+/*solapas*/
+.headerDautos .headBOTTOM li div{ display:none;}
+.headerDautos .headBOTTOM li.active a{ display:none;}
+.headerDautos .headBOTTOM li.active div{ display: block;}
+.headerDautos .headBOTTOM li{float:left;padding:2px 2px; z-index:2;}
+.headerDautos .headBOTTOM .optionbar li a{ text-decoration:none;}
+.headerDautos .headBOTTOM .L{background: url(../../../Content/images/bt_inactiveheadL.gif) left top no-repeat;width:3px;height:36px;float:left}
+.headerDautos .headBOTTOM .R{background: url(../../../Content/images/bt_inactiveheadR.gif) left top no-repeat;width:3px;height:36px;float:left}
+.headerDautos .headBOTTOM .M{background: url(../../../Content/images/bt_inactiveheadM.gif) left top repeat-x;padding:7px 12px 13px 13px;height:16px;color:#ffffff;float:left;font-size:16px; font-family:Arial, Helvetica, sans-serif; font-weight:normal;}
+.headerDautos .headBOTTOM li.active{ margin-top:-3px;}
+.headerDautos .headBOTTOM li.active .L{background: url(../../../Content/images/bt_activeheadL.gif) left top no-repeat;width:3px;height:49px;float:left}
+.headerDautos .headBOTTOM li.active .R{background: url(../../../Content/images/bt_activeheadR.gif) left top no-repeat;width:3px;height:49px;float:left}
+.headerDautos .headBOTTOM li.active .M{background: url(../../../Content/images/bt_activeheadM.gif) left top repeat-x;padding:11px 10px 13px;height:25px;font-weight:bold;color:#ffffff;float:left; color:#fa871b; font-weight:bold; font-size:16px;}
+.headerDautos .hLogin li.salir{padding:0; padding-right:16px;}
+.pipe{ padding:0 6px 0 3px; color:#999999;}
+.headerDautos .hLogin li.name{background:none; padding:0;}
+.headerDautos .hLogin li p{ font-size:12px; font-weight:bold; color:#575659; }
+.registrado .registrate{ display:none;}
+.registrado .ingresa{ display:none;}
+ul .sombraL{ background:url(../../../Content/images/cv_headloginL2.gif) no-repeat; height:33px; width:42px; position:absolute;left:-42px;top:0}
+ul  .sombraR{ background:url(../../../Content/images/cv_headloginR2.gif) no-repeat; height:33px; width:21px; position:absolute; right:-11px;top:0}
+
+/*ie6* html .sombraR{ left:14px;}*/
+
+/*.headerDautos .hLogin li.sombra{ top:-2px; position:relative; left:-10px; background:none; padding-left:0;}*/
+.headerDautos .hLogin li.sombra.mod{position:relative; top:2px; left:-10px; background:none; padding-left:10px;}
+
+/*FOOTER*/
+.Ft{ width:100%;position: relative;}
+.Ft .FtHead{ background: #ec7820 url(../../../Content/images/fd_Footer2.gif) left top repeat-x; width:100%; float:
+left;}
+.Ft .FtFooter{ background: #eeeeee url(../../../Content/images/fd_Footer2_gris.gif) left top repeat-x;width:100%; float:left}
+/*ul*/
+.FtHead .contHead{ margin:0 auto; padding:22px 0 18px 0px; width:1004px;}
+.Ftfoot .contHead{ margin:0 auto; padding:22px 0 18px 0px; width:1004px; text-align:left;}
+.FtHead .contHead li.block{ float:left; background:url(../../../Content/images/fd_Footer2_pipe.gif) right top repeat-y; padding:0 13px 0 13px; height:108px;}
+.FtHead .contHead li.block.first{ padding-left:5px;}
+/*ie7 fix*/
+:first-child + html .FtHead .contHead li.block{ padding-top:3px;}
+:first-child + html .FtHead .contHead li.block.last{ padding-top:25px;}
+.FtHead .contHead li.preLast{ background:none;}
+.FtHead .contHead li.last{ background:none; padding-top:24px; height:auto;}
+.FtHead .contHead h5{ font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#030200; padding-bottom:17px; line-height:7px;}
+.FtHead .contHead ul li{ float:none; background:url(../../../Content/images/fd_dot.gif) left 7px no-repeat; padding:0 0 4px 12px; text-align:left;}
+.FtHead .contHead ul li a{ color:#ffffff;}
+/*foot*/
+/*blocke L*/
+.contFooter{ width:1004px; margin:0 auto;}
+.contFooter .blockL{ float:left; width:388px;}
+.contFooter .blockL span{ padding:15px 0 6px 0; float:left;}
+.contFooter .copyright{ width:380px;}
+.contFooter .copyright li{ float:left; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#727272;}
+.contFooter .copyright li a{color:#ec7820; font-weight:bold;}
+.contFooter .copyright .separador{ padding:0 5px 0 5px;}
+/* bloacke R*/
+.contFooter .blockR{ float: right;}
+.contFooter .blockR ul{ font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#5d5d5d;}
+.contFooter .blockR ul .separador{ padding:38px 9px 0 9px;}
+.contFooter .blockR li{ float:left; padding-top:38px;}
+.contFooter .blockR li.first{ padding-top:36px;}
+.contFooter .blockR li.last{ background:url(../../../Content/images/fd_agea-logo.gif) right bottom no-repeat; width:76px; height:69px; padding-top:6px; padding-left:10px;}
+.contFooter .blockR li a.iconosur{ background:url(../../../Content/images/fd_iconosur.gif) left bottom no-repeat; width:60px; height:15px; display:block; cursor:auto;}
+/*.contFooter .blockR li a.iconosur:hover{ background: url(../../../Content/images/fd_iconosur-hover.gif) left bottom no-repeat;}*/
+
+/*solapa destacada*/
+
+.headerDautos .headBOTTOM .Ldest{background: url(../../../Content/images/bt_inactiveheadL_dest.gif) left top no-repeat;width:3px;height:36px;float:left}
+.headerDautos .headBOTTOM .Rdest{background: url(../../../Content/images/bt_inactiveheadR_dest.gif) left top no-repeat;width:3px;height:36px;float:left}
+.headerDautos .headBOTTOM .Mdest{background: url(../../../Content/images/bt_inactiveheadM_dest.gif) left top repeat-x;padding:7px 12px 13px 13px;height:16px;color:#ffffff;float:left;font-size:16px; font-family:Arial, Helvetica, sans-serif; font-weight:normal;}
+.headerDautos .headBOTTOM a:hover .Ldest{background: url(../../../Content/images/bt_inactiveheadL_destH.gif) left top no-repeat;width:3px;height:36px;float:left}
+.headerDautos .headBOTTOM a:hover .Rdest{background: url(../../../Content/images/bt_inactiveheadR_destH.gif) left top no-repeat;width:3px;height:36px;float:left}
+.headerDautos .headBOTTOM a:hover .Mdest{background: url(../../../Content/images/bt_inactiveheadM_destH.gif) left top repeat-x;padding:7px 12px 13px 13px;height:16px;color:#ffffff;float:left;font-size:16px; font-family:Arial, Helvetica, sans-serif; font-weight:normal;}
+
+
+.headerDautos .hLogin .modFacebook a.modYout {
+    background-attachment: scroll;    
+    background-color: transparent;
+    background-image: url("http://200.42.93.211:81/deautos/blogger/img/Youtube-icon.png");
+    background-position: center top;
+    background-repeat: no-repeat;    
+    display: block;
+    height: 16px;
+    margin-left: 6px;
+    margin-right: 0;
+    width: 16px;
+}

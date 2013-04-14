@@ -1,0 +1,4 @@
+para ingresar a la aplicación
+
+usuario: admin
+password: P2ssw0rd

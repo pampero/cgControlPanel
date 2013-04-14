@@ -1,0 +1,6 @@
+C:\Program Files (x86)\IIS Express>appcmd set app "cgcontrolpanel/" /applicationPool:"Clr4ClassicAppPool"
+APP object "CGControlPanel/" changed
+
+
+userid=administrator
+password=administrator

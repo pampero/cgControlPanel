@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Themes>
+  <Theme Text="Default" Value="Default" />
+  <Theme Text="Glass" Value="Glass" />
+  <Theme Text="DevEx" Value="DevEx" />
+  <Theme Text="Clinical Study Theme" Value="ClinicalStudyTheme" />
+  <Theme Text="Black Glass" Value="BlackGlass" />
+  <Theme Text="Office2010 Black" Value="Office2010Black" />
+  <Theme Text="Office2010 Blue" Value="Office2010Blue" />
+  <Theme Text="Office2010 Silver" Value="Office2010Silver" />
+  <Theme Text="Plastic Blue" Value="PlasticBlue" />
+</Themes>

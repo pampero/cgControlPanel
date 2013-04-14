@@ -1,0 +1,6 @@
+
+//    <dxg:GridViewDataHyperLinkColumn Width="30px" Caption=" " FieldName="JobId" ReadOnly="True" VisibleIndex="6">
+//                                <DataItemTemplate>
+//                                 <a href='javascript:OnRowClick(this, <%# Eval("JobId") %>, <%# Container.VisibleIndex %>);'>Relacionados</a>
+//                                </DataItemTemplate>
+//            </dxg:GridViewDataHyperLinkColumn>
